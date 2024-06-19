@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <g id="1.首页相关" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Top-ranked" transform="translate(-719.000000, -62.000000)" stroke="#DADADA" stroke-width="2">
+            <g id="编组" transform="translate(720.000000, 63.000000)">
+                <path d="M8.5,17 C13.1944,17 17,13.1944 17,8.5 C17,3.8056 13.1944,0 8.5,0 C3.8056,0 0,3.8056 0,8.5 C0,13.1944 3.8056,17 8.5,17 Z" id="路径"></path>
+                <line x1="14.6108" y1="14.61085" x2="18.85345" y2="18.8535" id="路径" stroke-linecap="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

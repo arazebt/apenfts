@@ -1,0 +1,942 @@
+<!DOCTYPE html><html lang="en" title="APENFT Market"><head><style data-emotion="css-global" data-s="">html { -webkit-font-smoothing: antialiased; box-sizing: border-box; text-size-adjust: 100%; }
+*, ::before, ::after { box-sizing: inherit; }
+strong, b { font-weight: 700; }
+body { margin: 0px; color: rgb(4, 17, 29); font-size: 0.875rem; font-weight: 700; line-height: 1.5em; font-family: Montserrat-Regular; background-color: rgb(255, 255, 255); }
+@media print {
+  body { background-color: rgb(255, 255, 255); }
+}
+body::backdrop { background-color: rgb(255, 255, 255); }</style>
+<style data-emotion="css-global" data-s="">html { -webkit-font-smoothing: antialiased; box-sizing: border-box; text-size-adjust: 100%; }
+*, ::before, ::after { box-sizing: inherit; }
+strong, b { font-weight: 700; }
+body { margin: 0px; color: rgb(4, 17, 29); font-size: 0.875rem; font-weight: 700; line-height: 1.5em; font-family: Montserrat-Regular; background-color: rgb(255, 255, 255); }
+@media print {
+  body { background-color: rgb(255, 255, 255); }
+}
+body::backdrop { background-color: rgb(255, 255, 255); }</style>
+<style data-emotion="css-global" data-s="">@-webkit-keyframes mui-auto-fill { 
+  0% { display: block; }
+}
+@keyframes mui-auto-fill { 
+  0% { display: block; }
+}
+@-webkit-keyframes mui-auto-fill-cancel { 
+  0% { display: block; }
+}
+@keyframes mui-auto-fill-cancel { 
+  0% { display: block; }
+}</style>
+<style data-emotion="css" data-s="">.css-sxff6s { display: flex; flex-direction: column; width: 100%; box-sizing: border-box; flex-shrink: 0; position: fixed; z-index: 1100; top: 0px; left: auto; right: 0px; color: inherit; background: transparent; }
+@media print {
+  .css-sxff6s { position: absolute; }
+}
+.css-1en2xg8 { transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; box-shadow: none; display: flex; flex-direction: column; width: 100%; box-sizing: border-box; flex-shrink: 0; position: fixed; z-index: 1100; top: 0px; left: auto; right: 0px; color: inherit; background: transparent; }
+.css-1en2xg8 .MuiAutocomplete-option { padding: 5px 10px; }
+.css-1en2xg8 .iconfont { color: rgb(4, 17, 29) !important; }
+.css-1en2xg8 .MuiCalendarOrClockPicker-root, .css-1en2xg8 .MuiDialogActions-root { background: rgb(255, 255, 255); }
+.css-1en2xg8 .MuiCalendarOrClockPicker-root .MuiDateTimePickerToolbar-timeContainer, .css-1en2xg8 .MuiDialogActions-root .MuiDateTimePickerToolbar-timeContainer { -webkit-box-align: center; align-items: center; }
+.css-1en2xg8 .MuiCalendarOrClockPicker-root .MuiClockPicker-root .MuiTypography-caption, .css-1en2xg8 .MuiDialogActions-root .MuiClockPicker-root .MuiTypography-caption { color: rgba(255, 255, 255, 0.97); }
+@media print {
+  .css-1en2xg8 { position: absolute; }
+}
+.css-1mavajb { position: relative; display: flex; -webkit-box-align: center; align-items: center; min-height: 48px; padding: 0px 8px; height: 64px; border-bottom: 1px solid transparent; border-top-color: transparent; border-right-color: transparent; border-left-color: transparent; }
+@media (min-width: 600px) {
+  .css-1mavajb { padding-left: 24px; padding-right: 24px; }
+}
+@media (min-width: 600px) {
+  .css-1mavajb { min-height: 48px; }
+}
+.css-1q6szyf { display: flex; flex-direction: row; -webkit-box-pack: justify; justify-content: space-between; width: 100%; height: 100%; }
+.css-lshoyl { display: flex; flex-direction: row; -webkit-box-align: center; align-items: center; -webkit-box-pack: start; justify-content: flex-start; flex: 1 1 0%; }
+.css-1htwsou { height: 34px; display: flex; margin-right: 16px; }
+@media (max-width: 899.95px) {
+  .css-1htwsou { width: auto; }
+}
+.css-129auf3 { -webkit-box-flex: 1; flex-grow: 1; }
+@media (min-width: 0px) {
+  .css-129auf3 { display: block; }
+}
+@media (min-width: 900px) {
+  .css-129auf3 { display: block; }
+}
+.css-1xhj18k { display: flex; flex-direction: row; }
+.css-er6cpi { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 0px; overflow: hidden; user-select: none; background: transparent; height: 38px; width: auto; }
+.css-er6cpi.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-er6cpi.MuiAvatar-colorDefault path { display: none; }
+.css-er6cpi img { object-fit: contain; }
+.css-1hy9t21 { width: 100%; height: 100%; text-align: center; object-fit: cover; color: transparent; text-indent: 10000px; }
+@media (min-width: 0px) {
+  .css-d47f85 { display: block; }
+}
+@media (min-width: 900px) {
+  .css-d47f85 { display: none; }
+}
+.css-1isemmb { margin-left: 8px; }
+.css-l2pexk { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border-style: initial; border-color: initial; border-image: initial; margin: 0px; padding: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; color: inherit; border-radius: 10px; border-width: 2px !important; }
+.css-l2pexk.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-l2pexk { -webkit-print-color-adjust: exact; }
+}
+.css-l2pexk:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-l2pexk.Mui-disabled { color: rgb(136, 142, 153) !important; background: rgba(4, 17, 29, 0.06) !important; cursor: not-allowed !important; }
+.css-l2pexk.Mui-disabled .MuiTypography-root { color: rgb(136, 142, 153) !important; }
+.css-l2pexk.Mui-disabled .MuiSvgIcon-root { fill: rgb(136, 142, 153); stroke: rgb(136, 142, 153); }
+.css-l2pexk .MuiTouchRipple-root { display: none; }
+.css-1itwew { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 50%; overflow: hidden; user-select: none; background: transparent; height: 42px; width: 42px; margin-right: 4px; }
+.css-1itwew.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-1itwew.MuiAvatar-colorDefault path { display: none; }
+.css-1m16yed { z-index: 1100; width: 100%; padding: 0px 12px; top: -55px !important; }
+@media (max-width: 599.95px) {
+  .css-1m16yed { padding: 0px 8px; }
+}
+.css-g7cu4w { z-index: 1100; width: 100%; padding: 0px 12px; top: -55px !important; }
+@media (max-width: 599.95px) {
+  .css-g7cu4w { padding: 0px 8px; }
+}
+.css-nua0o9 { position: relative; -webkit-box-flex: 1; flex-grow: 1; }
+@media (min-width: 0px) {
+  .css-nua0o9 { display: none; }
+}
+@media (min-width: 900px) {
+  .css-nua0o9 { display: block; }
+}
+.css-9ssy1z { width: 100%; max-width: 450px; height: 42px; padding-left: 16px; background: transparent !important; }
+.css-9ssy1z .MuiOutlinedInput-notchedOutline { border-color: rgb(228, 231, 235); border-radius: 10px; }
+.css-9ssy1z input { color: rgb(4, 17, 29); background: transparent !important; padding-left: 4px !important; }
+@media (max-width: 1199.95px) {
+  .css-9ssy1z { width: 100%; max-width: 600px; }
+}
+@media (max-width: 899.95px) {
+  .css-9ssy1z { width: 100%; max-width: 100%; background: rgb(255, 255, 255); }
+}
+.css-1vtfrzf { font-size: 0.875rem; font-weight: 700; line-height: 1.4375em; color: rgba(0, 0, 0, 0.87); font-family: Montserrat-Regular; box-sizing: border-box; cursor: text; display: inline-flex; -webkit-box-align: center; align-items: center; position: relative; padding-right: 14px; border-radius: 10px; width: 100%; max-width: 450px; height: 42px; padding-left: 16px; background: transparent !important; }
+.css-1vtfrzf.Mui-disabled { color: rgba(0, 0, 0, 0.38); cursor: default; }
+.css-1vtfrzf input { color: rgb(4, 17, 29); font-weight: 400; }
+.css-1vtfrzf input::-webkit-input-placeholder { color: rgb(136, 142, 153); font-size: 1rem; opacity: 1; }
+.css-1vtfrzf input::placeholder { color: rgb(136, 142, 153); font-size: 1rem; opacity: 1; }
+.css-1vtfrzf:hover .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.87); }
+@media (hover: none) {
+  .css-1vtfrzf:hover .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.23); }
+}
+.css-1vtfrzf.Mui-focused .MuiOutlinedInput-notchedOutline { border-color: rgb(89, 69, 222); border-width: 2px; }
+.css-1vtfrzf.Mui-error .MuiOutlinedInput-notchedOutline { border-color: rgb(211, 47, 47); }
+.css-1vtfrzf.Mui-disabled .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.26); }
+.css-1vtfrzf .MuiOutlinedInput-notchedOutline { border-radius: 10px; border: 1px solid rgb(228, 231, 235); }
+.css-1vtfrzf.Mui-focused .MuiOutlinedInput-notchedOutline { border-width: 1px; border-color: rgb(228, 231, 235) !important; }
+.css-1vtfrzf:hover .MuiOutlinedInput-notchedOutline { border-color: rgb(228, 231, 235); }
+.css-1vtfrzf.MuiInputBase-multiline { padding: 10px 1px; height: auto; }
+.css-1vtfrzf.Mui-disabled .MuiOutlinedInput-notchedOutline { color: rgb(136, 142, 153); background: rgba(4, 17, 29, 0.06); }
+.css-1vtfrzf svg { color: rgb(4, 17, 29); }
+.css-1vtfrzf .MuiOutlinedInput-notchedOutline { border-color: rgb(228, 231, 235); border-radius: 10px; }
+.css-1vtfrzf input { color: rgb(4, 17, 29); background: transparent !important; padding-left: 4px !important; }
+@media (max-width: 1199.95px) {
+  .css-1vtfrzf { width: 100%; max-width: 600px; }
+}
+@media (max-width: 899.95px) {
+  .css-1vtfrzf { width: 100%; max-width: 100%; background: rgb(255, 255, 255); }
+}
+.css-1alhjvs { font: inherit; letter-spacing: inherit; border: 0px; box-sizing: content-box; background: none; margin: 0px; -webkit-tap-highlight-color: transparent; display: block; min-width: 0px; width: 100%; animation-name: mui-auto-fill-cancel; animation-duration: 10ms; padding: 0px 14px; height: 48px; color: rgb(4, 17, 29); }
+.css-1alhjvs::-webkit-input-placeholder { color: currentcolor; opacity: 0.42; transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; }
+.css-1alhjvs:focus { outline: 0px; }
+.css-1alhjvs:invalid { box-shadow: none; }
+.css-1alhjvs::-webkit-search-decoration { appearance: none; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-1alhjvs::-webkit-input-placeholder { opacity: 0 !important; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-1alhjvs:focus::-webkit-input-placeholder { opacity: 0.42; }
+.css-1alhjvs.Mui-disabled { opacity: 1; -webkit-text-fill-color: rgba(0, 0, 0, 0.38); }
+.css-1alhjvs:-webkit-autofill { animation-duration: 5000s; animation-name: mui-auto-fill; }
+.css-1alhjvs:-webkit-autofill { border-radius: inherit; }
+.css-1alhjvs.MuiInputBase-inputSizeSmall { height: 48px; padding: 0px 14px; }
+.css-1alhjvs.MuiInputBase-inputSizeSmall.MuiInputBase-inputAdornedStart { padding-left: 0px; }
+.css-70nj2 { display: flex; height: 0.01em; max-height: 2em; -webkit-box-align: center; align-items: center; white-space: nowrap; color: rgba(0, 0, 0, 0.54); margin-left: 8px; }
+.css-70nj2 img:hover { cursor: pointer; }
+.css-jefkce { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 0px; overflow: hidden; user-select: none; background: transparent; height: 20px; width: 20px; }
+.css-jefkce.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-jefkce.MuiAvatar-colorDefault path { display: none; }
+.css-1g0bsln { border-color: rgba(0, 0, 0, 0.23); border-radius: 0px; }
+.css-1t9qfo0 { text-align: left; position: absolute; inset: -5px 0px 0px; margin: 0px; padding: 0px 8px; pointer-events: none; border-style: solid; border-width: 1px; overflow: hidden; min-width: 0%; border-color: rgba(0, 0, 0, 0.23); border-radius: 0px; }
+.css-ihdtdm { float: unset; width: auto; overflow: hidden; padding: 0px; line-height: 11px; transition: width 150ms cubic-bezier(0, 0, 0.2, 1) 0ms; }
+.css-10klw3m { height: 100%; }
+.css-voneje { display: flex; flex-direction: row; -webkit-box-align: center; align-items: center; height: 100%; }
+.css-a43lwh { -webkit-box-align: center; align-items: center; text-align: center; height: 100%; }
+.css-a43lwh button { border-radius: 0px !important; background: transparent !important; }
+.css-a43lwh h5 { color: rgb(4, 17, 29); }
+.css-a43lwh a { text-decoration: none; }
+.css-a43lwh .MuiButtonBase-root { height: 100%; padding-left: 16px; padding-right: 16px; }
+.css-a43lwh .active h5 { position: relative; color: rgb(4, 17, 29); font-weight: 700; }
+.css-a43lwh .active h5::after { content: ""; height: 2px; background: rgb(4, 17, 29); width: 100%; position: absolute; bottom: -10px; left: 0px; }
+.css-a43lwh button:hover { background: rgba(0, 0, 0, 0.04) !important; }
+.css-vyji70 { text-decoration: underline rgba(89, 69, 222, 0.4); }
+.css-vyji70:hover { text-decoration-color: inherit; }
+.css-175svmd { margin: 0px; font: inherit; color: rgb(89, 69, 222); text-decoration: underline rgba(89, 69, 222, 0.4); }
+.css-175svmd:hover { text-decoration-color: inherit; }
+.css-89ko4i { margin: 0px; font-size: 0.875rem; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; line-height: 24px; height: 24px; }
+.css-6fwl66 .MuiTooltip-tooltip { border: 1px solid transparent; margin-left: -12px; padding: 0px; background: rgb(255, 255, 255); backdrop-filter: drop-shadow(rgba(0, 0, 0, 0.32) 0px 2px 8px); border-radius: 10px; width: auto; box-shadow: rgba(0, 0, 0, 0.18) 0px 4px 15px; overflow: hidden; margin-top: 0px !important; }
+.css-6fwl66 .MuiTooltip-tooltip .MuiButtonBase-root { padding: 0px 20px; border-radius: 0px; height: 56px; }
+.css-6fwl66 .MuiTooltip-tooltip .MuiList-root { padding: 8px; border: unset !important; }
+.css-6fwl66 .MuiTooltip-tooltip .MuiButtonBase-root:hover { border-radius: 10px; background: rgba(106, 114, 128, 0.04) !important; }
+.css-6fwl66 .MuiTooltip-tooltip .MuiButtonBase-root:active { background: rgba(106, 114, 128, 0.06) !important; }
+.css-6fwl66 .MuiTooltip-tooltip .font-m { color: rgb(4, 17, 29); }
+.css-sgsk4k { margin: 0px; font-size: 0.875rem; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; line-height: 24px; height: 24px; display: flex; -webkit-box-align: center; align-items: center; overflow: hidden; }
+.css-1eo36h4 { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 50%; overflow: hidden; user-select: none; background: transparent; width: 24px; height: 24px; margin-right: 2px; }
+.css-1eo36h4.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-1eo36h4.MuiAvatar-colorDefault path { display: none; }
+.css-1jmjbjs { margin: 0px 4px 0px 0px; font-size: 0.875rem; line-height: 1.5em; font-family: Montserrat-Regular; color: rgb(94, 71, 222); white-space: pre-wrap; font-weight: 700; background-image: url("images/launchpad-text-bg.ce24c3c5.png"); background-clip: text; -webkit-text-fill-color: transparent; }
+.css-2hvrrx { z-index: 1500; pointer-events: none; }
+.css-2hvrrx .MuiTooltip-tooltip { border: 1px solid transparent; margin-left: -12px; padding: 0px; background: rgb(255, 255, 255); backdrop-filter: drop-shadow(rgba(0, 0, 0, 0.32) 0px 2px 8px); border-radius: 10px; width: auto; box-shadow: rgba(0, 0, 0, 0.18) 0px 4px 15px; overflow: hidden; margin-top: 0px !important; }
+.css-2hvrrx .MuiTooltip-tooltip .MuiButtonBase-root { padding: 0px 20px; border-radius: 0px; height: 56px; }
+.css-2hvrrx .MuiTooltip-tooltip .MuiList-root { padding: 8px; border: unset !important; }
+.css-2hvrrx .MuiTooltip-tooltip .MuiButtonBase-root:hover { border-radius: 10px; background: rgba(106, 114, 128, 0.04) !important; }
+.css-2hvrrx .MuiTooltip-tooltip .MuiButtonBase-root:active { background: rgba(106, 114, 128, 0.06) !important; }
+.css-2hvrrx .MuiTooltip-tooltip .font-m { color: rgb(4, 17, 29); }
+.css-3maz0t { z-index: 1500; pointer-events: none; }
+.css-3maz0t .MuiTooltip-tooltip { border: 1px solid transparent; margin-left: -12px; padding: 0px; background: rgb(255, 255, 255); backdrop-filter: drop-shadow(rgba(0, 0, 0, 0.32) 0px 2px 8px); border-radius: 10px; width: auto; box-shadow: rgba(0, 0, 0, 0.18) 0px 4px 15px; overflow: hidden; margin-top: 0px !important; }
+.css-3maz0t .MuiTooltip-tooltip .MuiButtonBase-root { padding: 0px 20px; border-radius: 0px; height: 56px; }
+.css-3maz0t .MuiTooltip-tooltip .MuiList-root { padding: 8px; border: unset !important; }
+.css-3maz0t .MuiTooltip-tooltip .MuiButtonBase-root:hover { border-radius: 10px; background: rgba(106, 114, 128, 0.04) !important; }
+.css-3maz0t .MuiTooltip-tooltip .MuiButtonBase-root:active { background: rgba(106, 114, 128, 0.06) !important; }
+.css-3maz0t .MuiTooltip-tooltip .font-m { color: rgb(4, 17, 29); }
+.css-1plalan { text-align: center; flex: 0 0 auto; overflow: visible; color: rgba(0, 0, 0, 0.54); transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; padding: 5px; font-size: 1.125rem; height: 100%; width: 80px; border-radius: 0px; }
+.css-1plalan:hover { background-color: rgba(0, 0, 0, 0.04); }
+@media (hover: none) {
+  .css-1plalan:hover { background-color: transparent; }
+}
+.css-1plalan.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-1mcl5al { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border-style: initial; border-color: initial; border-image: initial; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; overflow: visible; color: rgba(0, 0, 0, 0.54); transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; padding: 5px; font-size: 1.125rem; height: 100%; width: 80px; border-radius: 0px; border-width: 2px !important; }
+.css-1mcl5al.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-1mcl5al { -webkit-print-color-adjust: exact; }
+}
+.css-1mcl5al:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-1mcl5al.Mui-disabled { color: rgb(136, 142, 153) !important; background: rgba(4, 17, 29, 0.06) !important; cursor: not-allowed !important; }
+.css-1mcl5al.Mui-disabled .MuiTypography-root { color: rgb(136, 142, 153) !important; }
+.css-1mcl5al.Mui-disabled .MuiSvgIcon-root { fill: rgb(136, 142, 153); stroke: rgb(136, 142, 153); }
+.css-1mcl5al .MuiTouchRipple-root { display: none; }
+.css-1mcl5al:hover { background-color: rgba(0, 0, 0, 0.04); }
+@media (hover: none) {
+  .css-1mcl5al:hover { background-color: transparent; }
+}
+.css-1mcl5al.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-1fucjuo { margin: 0px; font-size: 0.875rem; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; line-height: 1.334; padding-left: 4px; }
+.css-1qe7c9d .MuiBackdrop-root { background-color: transparent; }
+.css-tkevr6 { display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; height: 100%; }
+.css-hsmloh { text-align: center; flex: 0 0 auto; font-size: 1.5rem; padding: 8px; overflow: visible; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; color: black; height: 100%; width: 60px; margin-right: 10px; border-radius: 0px; }
+.css-hsmloh:hover { background-color: rgba(0, 0, 0, 0.04); }
+@media (hover: none) {
+  .css-hsmloh:hover { background-color: transparent; }
+}
+.css-hsmloh.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-1ti95g4 { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border-style: initial; border-color: initial; border-image: initial; margin: 0px 10px 0px 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; font-size: 1.5rem; padding: 8px; overflow: visible; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; color: black; height: 100%; width: 60px; border-radius: 0px; border-width: 2px !important; }
+.css-1ti95g4.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-1ti95g4 { -webkit-print-color-adjust: exact; }
+}
+.css-1ti95g4:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-1ti95g4.Mui-disabled { color: rgb(136, 142, 153) !important; background: rgba(4, 17, 29, 0.06) !important; cursor: not-allowed !important; }
+.css-1ti95g4.Mui-disabled .MuiTypography-root { color: rgb(136, 142, 153) !important; }
+.css-1ti95g4.Mui-disabled .MuiSvgIcon-root { fill: rgb(136, 142, 153); stroke: rgb(136, 142, 153); }
+.css-1ti95g4 .MuiTouchRipple-root { display: none; }
+.css-1ti95g4:hover { background-color: rgba(0, 0, 0, 0.04); }
+@media (hover: none) {
+  .css-1ti95g4:hover { background-color: transparent; }
+}
+.css-1ti95g4.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-1hvsj9x { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border-style: initial; border-color: initial; border-image: initial; margin: 0px 0px 0px 10px; padding: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; color: inherit; border-radius: 10px; border-width: 2px !important; width: 140px !important; height: 42px !important; }
+.css-1hvsj9x.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-1hvsj9x { -webkit-print-color-adjust: exact; }
+}
+.css-1hvsj9x:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-1hvsj9x.Mui-disabled { color: rgb(136, 142, 153) !important; background: rgba(4, 17, 29, 0.06) !important; cursor: not-allowed !important; }
+.css-1hvsj9x.Mui-disabled .MuiTypography-root { color: rgb(136, 142, 153) !important; }
+.css-1hvsj9x.Mui-disabled .MuiSvgIcon-root { fill: rgb(136, 142, 153); stroke: rgb(136, 142, 153); }
+.css-1hvsj9x .MuiTouchRipple-root { display: none; }
+.css-1non6u6 { margin: 0px; font-size: 0.875rem; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; line-height: 1.334; }
+.css-a3xyjy { z-index: 1200; }
+.css-1sjuiow { position: fixed; top: 0px; left: 0px; z-index: 1301; width: 100%; }
+.css-vmfx9e { position: relative; overflow: hidden; display: block; z-index: 0; background-color: rgb(191, 184, 242); height: 3px; }
+@media print {
+  .css-vmfx9e { -webkit-print-color-adjust: exact; }
+}
+.css-1l6dmt6 { position: absolute; left: 0px; bottom: 0px; top: 0px; transition: transform 0.2s linear 0s; transform-origin: left center; background-color: rgb(89, 69, 222); width: auto; animation: 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) 0s infinite normal none running animation-ozg7p2; }
+@-webkit-keyframes animation-ozg7p2 { 
+  0% { left: -35%; right: 100%; }
+  60% { left: 100%; right: -90%; }
+  100% { left: 100%; right: -90%; }
+}
+@keyframes animation-ozg7p2 { 
+  0% { left: -35%; right: 100%; }
+  60% { left: 100%; right: -90%; }
+  100% { left: 100%; right: -90%; }
+}
+.css-tliesb { position: absolute; left: 0px; bottom: 0px; top: 0px; transition: transform 0.2s linear 0s; transform-origin: left center; background-color: rgb(89, 69, 222); width: auto; animation: 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.15s infinite normal none running animation-19gglwu; }
+@-webkit-keyframes animation-19gglwu { 
+  0% { left: -200%; right: 100%; }
+  60% { left: 107%; right: -8%; }
+  100% { left: 107%; right: -8%; }
+}
+@keyframes animation-19gglwu { 
+  0% { left: -200%; right: 100%; }
+  60% { left: 107%; right: -8%; }
+  100% { left: 107%; right: -8%; }
+}
+.css-w0pj6f { overflow: hidden; pointer-events: none; position: absolute; z-index: 0; inset: 0px; border-radius: inherit; }
+.css-13jmgve { min-height: 100vh; padding-top: 40px; width: 100%; max-width: 2560px; margin-left: auto; margin-right: auto; padding-left: 64px !important; padding-right: 64px !important; }
+.css-13jmgve h1, .css-13jmgve h2 { font-size: 32px; }
+.css-6d9ffm { padding-top: 64px; }
+.css-1serysv { padding-left: 0px; padding-right: 0px; }
+.css-130jr3z { padding-top: 80px; }
+.css-1d3bbye { box-sizing: border-box; display: flex; flex-flow: wrap; width: 100%; }
+.css-2c5bmv { box-sizing: border-box; display: flex; flex-flow: wrap; width: 100%; margin: 0px 0px 16px; flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; -webkit-box-align: center; align-items: center; }
+@media (min-width: 600px) {
+  .css-2c5bmv { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 900px) {
+  .css-2c5bmv { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1080px) {
+  .css-2c5bmv { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1180px) {
+  .css-2c5bmv { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1200px) {
+  .css-2c5bmv { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1280px) {
+  .css-2c5bmv { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1320px) {
+  .css-2c5bmv { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1920px) {
+  .css-2c5bmv { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 2560px) {
+  .css-2c5bmv { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+.css-oiymie { display: flex; flex-direction: row; -webkit-box-pack: justify; justify-content: space-between; -webkit-box-align: center; align-items: center; width: 100%; }
+.css-oiymie > :not(style):not(style) { margin: 0px; }
+.css-oiymie > :not(style) ~ :not(style) { margin-left: 16px; }
+.css-u4p24i { display: flex; flex-direction: row; -webkit-box-align: center; align-items: center; }
+.css-14ul8n7 { margin: 0px; font-size: 2rem; color: rgb(27, 25, 63); font-weight: 900; font-family: Montserrat-Regular; line-height: 1.2; }
+.css-3idatp { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; border-style: initial; border-color: initial; border-image: initial; margin: 0px; padding: 0px 20px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; color: inherit; border-radius: 10px; height: 46px; background: rgba(255, 255, 255, 0.12); border-width: 2px !important; }
+.css-3idatp.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-3idatp { -webkit-print-color-adjust: exact; }
+}
+.css-3idatp:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-3idatp.Mui-disabled { color: rgb(136, 142, 153) !important; background: rgba(4, 17, 29, 0.06) !important; cursor: not-allowed !important; }
+.css-3idatp.Mui-disabled .MuiTypography-root { color: rgb(136, 142, 153) !important; }
+.css-3idatp.Mui-disabled .MuiSvgIcon-root { fill: rgb(136, 142, 153); stroke: rgb(136, 142, 153); }
+.css-3idatp .MuiTouchRipple-root { display: none; }
+.css-vkl56g { margin: 0px 16px 0px 0px; font-size: 1rem; font-weight: 900; font-family: Montserrat-Regular; line-height: 1.235; color: rgb(4, 17, 29); }
+.css-zhb0se { box-sizing: border-box; display: flex; flex-flow: wrap; width: 100%; margin: 8px 0px 16px; flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; -webkit-box-align: center; align-items: center; }
+@media (min-width: 600px) {
+  .css-zhb0se { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 900px) {
+  .css-zhb0se { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1080px) {
+  .css-zhb0se { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1180px) {
+  .css-zhb0se { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1200px) {
+  .css-zhb0se { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1280px) {
+  .css-zhb0se { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1320px) {
+  .css-zhb0se { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1920px) {
+  .css-zhb0se { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 2560px) {
+  .css-zhb0se { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+.css-8czusc { display: flex; flex-direction: row; -webkit-box-align: center; align-items: center; width: 100%; }
+.css-8czusc > :not(style):not(style) { margin: 0px; }
+.css-8czusc > :not(style) ~ :not(style) { margin-left: 16px; }
+.css-1706c9z { display: flex; flex-direction: row; -webkit-box-align: center; align-items: center; position: relative; cursor: pointer; margin-top: 0px; }
+.css-1706c9z:hover .MuiTypography-h2 { background: linear-gradient(197deg, rgb(148, 134, 247) 0%, rgb(71, 111, 247) 100%) text; -webkit-text-fill-color: transparent; }
+.css-1706c9z:hover img { background: rgb(246, 246, 248); }
+.css-rz6de3 { margin: 0px 0px 0px 8px; font-size: 1.25rem; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; line-height: 1.167; background: linear-gradient(197deg, rgb(36, 85, 255) 0%, rgb(132, 114, 255) 100%) text; -webkit-text-fill-color: transparent; }
+.css-wo5hcj { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; width: 40px; height: 40px; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 50%; overflow: hidden; user-select: none; background: transparent; margin-left: 8px; }
+.css-wo5hcj.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-wo5hcj.MuiAvatar-colorDefault path { display: none; }
+.css-e6qqoj { margin: 0px 0px 0px 16px; flex-shrink: 0; border-width: 0px thin 0px 0px; border-style: solid; height: auto; align-self: stretch; opacity: 1; border-color: rgb(228, 231, 235); }
+.css-lc2fqa { list-style: none; margin: 0px; padding: 8px 0px; background: rgb(255, 255, 255); border-radius: 10px; border: 1px solid rgb(228, 231, 235); width: 260px; display: none; position: absolute; top: 52px; left: 0px; z-index: 2; }
+.css-lc2fqa.MuiMenu-list { padding: 8px; font-size: 0.875rem; line-height: 2; }
+.css-lc2fqa.MuiMenu-list .MuiMenuItem-root { border-radius: 6px; border: none; }
+.css-lc2fqa.MuiMenu-list .MuiMenuItem-root:hover { background-color: rgba(106, 114, 128, 0.04); font-weight: 700; }
+.css-lc2fqa.MuiMenu-list li.Mui-selected { font-weight: 700; background-color: transparent; }
+.css-lc2fqa .iconfont { color: rgb(4, 17, 29); }
+.css-lc2fqa li.Mui-selected { background: none; position: relative; }
+.css-lc2fqa li.Mui-selected::after { content: ""; background: url("fonts/li-selected-light.e323e5bf.svg") center center no-repeat; display: block; position: absolute; right: 10px; top: 50%; width: 12px; height: 12px; transform: translateY(-50%); }
+.css-lc2fqa.profileSection-list .MuiListItemButton-root { position: relative; }
+.css-lc2fqa.profileSection-list .MuiListItemButton-root::after { content: ""; background: url("fonts/item-right-light.f85cc443.svg") center center no-repeat; display: block; position: absolute; right: 24px; top: 50%; width: 12px; height: 12px; transform: translateY(-50%); }
+.css-1ahh9vb { display: flex; -webkit-box-flex: 1; flex-grow: 1; -webkit-box-pack: start; justify-content: flex-start; -webkit-box-align: center; align-items: center; position: relative; text-decoration: none; min-width: 0px; box-sizing: border-box; text-align: left; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; padding: 10px 16px; color: rgb(97, 97, 97); border-radius: 0px; }
+.css-1ahh9vb:hover { text-decoration: none; background-color: rgba(0, 0, 0, 0.04); }
+@media (hover: none) {
+  .css-1ahh9vb:hover { background-color: transparent; }
+}
+.css-1ahh9vb.Mui-selected { background-color: rgba(89, 69, 222, 0.08); }
+.css-1ahh9vb.Mui-selected.Mui-focusVisible { background-color: rgba(89, 69, 222, 0.2); }
+.css-1ahh9vb.Mui-selected:hover { background-color: rgba(89, 69, 222, 0.12); }
+@media (hover: none) {
+  .css-1ahh9vb.Mui-selected:hover { background-color: rgba(89, 69, 222, 0.08); }
+}
+.css-1ahh9vb.Mui-focusVisible { background-color: rgba(0, 0, 0, 0.12); }
+.css-1ahh9vb.Mui-disabled { opacity: 0.38; }
+.css-1ahh9vb.Mui-selected { position: relative; color: rgb(89, 69, 222); background-color: rgba(106, 114, 128, 0.04); }
+.css-1ahh9vb.Mui-selected:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-1ahh9vb.Mui-selected .MuiListItemIcon-root { color: rgb(4, 17, 29); }
+.css-1ahh9vb:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-1r7zxvj { -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border-style: initial; border-color: initial; border-image: initial; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; display: flex; -webkit-box-flex: 1; flex-grow: 1; -webkit-box-pack: start; justify-content: flex-start; -webkit-box-align: center; align-items: center; position: relative; text-decoration: none; min-width: 0px; box-sizing: border-box; text-align: left; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; padding: 10px 16px; color: rgb(97, 97, 97); border-radius: 0px; border-width: 2px !important; }
+.css-1r7zxvj.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-1r7zxvj { -webkit-print-color-adjust: exact; }
+}
+.css-1r7zxvj:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-1r7zxvj.Mui-disabled { color: rgb(136, 142, 153) !important; background: rgba(4, 17, 29, 0.06) !important; cursor: not-allowed !important; }
+.css-1r7zxvj.Mui-disabled .MuiTypography-root { color: rgb(136, 142, 153) !important; }
+.css-1r7zxvj.Mui-disabled .MuiSvgIcon-root { fill: rgb(136, 142, 153); stroke: rgb(136, 142, 153); }
+.css-1r7zxvj .MuiTouchRipple-root { display: none; }
+.css-1r7zxvj:hover { text-decoration: none; background-color: rgba(0, 0, 0, 0.04); }
+@media (hover: none) {
+  .css-1r7zxvj:hover { background-color: transparent; }
+}
+.css-1r7zxvj.Mui-selected { background-color: rgba(89, 69, 222, 0.08); }
+.css-1r7zxvj.Mui-selected.Mui-focusVisible { background-color: rgba(89, 69, 222, 0.2); }
+.css-1r7zxvj.Mui-selected:hover { background-color: rgba(89, 69, 222, 0.12); }
+@media (hover: none) {
+  .css-1r7zxvj.Mui-selected:hover { background-color: rgba(89, 69, 222, 0.08); }
+}
+.css-1r7zxvj.Mui-focusVisible { background-color: rgba(0, 0, 0, 0.12); }
+.css-1r7zxvj.Mui-disabled { opacity: 0.38; }
+.css-1r7zxvj.Mui-selected { position: relative; color: rgb(89, 69, 222); background-color: rgba(106, 114, 128, 0.04); }
+.css-1r7zxvj.Mui-selected:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-1r7zxvj.Mui-selected .MuiListItemIcon-root { color: rgb(4, 17, 29); }
+.css-1r7zxvj:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-1f73uye { margin: 0px; font-size: 0.875rem; font-weight: 700; line-height: 1.5em; color: rgb(4, 17, 29); font-family: Montserrat-Regular; }
+.css-11zvb11 { display: flex; flex-direction: row; }
+.css-11zvb11:hover { cursor: pointer; }
+.css-ece9c0 { color: rgba(0, 0, 0, 0.6); padding: 0px; margin-right: 8px; }
+.css-ece9c0:hover { background-color: rgba(89, 69, 222, 0.04); }
+@media (hover: none) {
+  .css-ece9c0:hover { background-color: transparent; }
+}
+.css-ece9c0.Mui-checked, .css-ece9c0.MuiCheckbox-indeterminate { color: rgb(89, 69, 222); }
+.css-ece9c0.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-1rou9o6 { border-radius: 50%; color: rgba(0, 0, 0, 0.6); padding: 0px; margin-right: 8px; }
+.css-1rou9o6:hover { background-color: rgba(89, 69, 222, 0.04); }
+@media (hover: none) {
+  .css-1rou9o6:hover { background-color: transparent; }
+}
+.css-1rou9o6.Mui-checked, .css-1rou9o6.MuiCheckbox-indeterminate { color: rgb(89, 69, 222); }
+.css-1rou9o6.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-1rf3cos { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border-style: initial; border-color: initial; border-image: initial; margin: 0px 8px 0px 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; border-radius: 50%; color: rgba(0, 0, 0, 0.6); padding: 0px; border-width: 2px !important; }
+.css-1rf3cos.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-1rf3cos { -webkit-print-color-adjust: exact; }
+}
+.css-1rf3cos:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-1rf3cos.Mui-disabled { color: rgb(136, 142, 153) !important; background: rgba(4, 17, 29, 0.06) !important; cursor: not-allowed !important; }
+.css-1rf3cos.Mui-disabled .MuiTypography-root { color: rgb(136, 142, 153) !important; }
+.css-1rf3cos.Mui-disabled .MuiSvgIcon-root { fill: rgb(136, 142, 153); stroke: rgb(136, 142, 153); }
+.css-1rf3cos .MuiTouchRipple-root { display: none; }
+.css-1rf3cos:hover { background-color: rgba(89, 69, 222, 0.04); }
+@media (hover: none) {
+  .css-1rf3cos:hover { background-color: transparent; }
+}
+.css-1rf3cos.Mui-checked, .css-1rf3cos.MuiCheckbox-indeterminate { color: rgb(89, 69, 222); }
+.css-1rf3cos.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-1m9pwf3 { cursor: inherit; position: absolute; opacity: 0; width: 100%; height: 100%; top: 0px; left: 0px; margin: 0px; padding: 0px; z-index: 1; }
+.css-s93olm { border-radius: 6px; width: 16px; height: 16px; background: url("fonts/check.37a6fd44.svg") center center / 100% no-repeat; border: none !important; }
+.css-5r4974 { margin: 0px; font-size: 1.25rem; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; line-height: 1.167; }
+.css-ggmf8 { display: flex; flex-flow: wrap; width: 100%; margin-top: 24px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgb(228, 231, 235); box-sizing: border-box; transition: all 0.5s ease 0s; border-radius: 16px; padding-top: 24px; padding-bottom: 24px; }
+.css-1nnpubf { box-sizing: border-box; margin: 0px; flex-direction: row; flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+@media (min-width: 600px) {
+  .css-1nnpubf { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 900px) {
+  .css-1nnpubf { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1080px) {
+  .css-1nnpubf { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1180px) {
+  .css-1nnpubf { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1200px) {
+  .css-1nnpubf { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1280px) {
+  .css-1nnpubf { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1320px) {
+  .css-1nnpubf { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1920px) {
+  .css-1nnpubf { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 2560px) {
+  .css-1nnpubf { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+.css-ru74qg { display: flex; flex-direction: column; -webkit-box-align: center; align-items: center; width: 100%; margin-bottom: 16px; padding-left: 16px; padding-right: 16px; }
+.css-hl3g3q { margin: 0px; font-size: 1rem; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; text-align: center; width: 100%; height: 40px; line-height: 40px; border: 1px solid rgb(228, 231, 235); background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 10px; display: inline-block; }
+.css-j7qwjs { display: flex; flex-direction: column; }
+.css-1sv583j { display: block; height: 1.2em; animation: 2s ease-in-out 0.5s infinite normal none running animation-c7515d; background: rgba(255, 255, 255, 0.1); margin-top: 8px; }
+@-webkit-keyframes animation-c7515d { 
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+@keyframes animation-c7515d { 
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+.css-31b4o6 { box-sizing: border-box; margin: 0px; flex-direction: row; flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; -webkit-box-pack: center; justify-content: center; }
+@media (min-width: 600px) {
+  .css-31b4o6 { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 900px) {
+  .css-31b4o6 { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1080px) {
+  .css-31b4o6 { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1180px) {
+  .css-31b4o6 { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1200px) {
+  .css-31b4o6 { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1280px) {
+  .css-31b4o6 { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1320px) {
+  .css-31b4o6 { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1920px) {
+  .css-31b4o6 { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 2560px) {
+  .css-31b4o6 { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+.css-1lkhxdn { margin: 0px; font-size: 1rem; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; text-align: center; width: 100%; height: 40px; line-height: 40px; border: 1px solid rgb(228, 231, 235); background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 10px; display: inline-block; }
+.css-15kvidv { display: flex; flex-flow: wrap; width: 100%; background: rgba(255, 255, 255, 0.1); border: 1px solid rgb(228, 231, 235); box-sizing: border-box; transition: all 0.5s ease 0s; border-radius: 16px; text-align: center; }
+.css-15kvidv h3 { font-size: 26px; }
+.css-15kvidv .MuiTypography-subtitle4 { line-height: 27px; }
+.css-1t2ncwx { box-sizing: border-box; margin: 0px 0px 8px; flex-direction: row; flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; padding-left: 16px; padding-right: 16px; }
+@media (min-width: 600px) {
+  .css-1t2ncwx { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 900px) {
+  .css-1t2ncwx { flex-basis: 25%; -webkit-box-flex: 0; flex-grow: 0; max-width: 25%; }
+}
+@media (min-width: 1080px) {
+  .css-1t2ncwx { flex-basis: 25%; -webkit-box-flex: 0; flex-grow: 0; max-width: 25%; }
+}
+@media (min-width: 1180px) {
+  .css-1t2ncwx { flex-basis: 25%; -webkit-box-flex: 0; flex-grow: 0; max-width: 25%; }
+}
+@media (min-width: 1200px) {
+  .css-1t2ncwx { flex-basis: 25%; -webkit-box-flex: 0; flex-grow: 0; max-width: 25%; }
+}
+@media (min-width: 1280px) {
+  .css-1t2ncwx { flex-basis: 25%; -webkit-box-flex: 0; flex-grow: 0; max-width: 25%; }
+}
+@media (min-width: 1320px) {
+  .css-1t2ncwx { flex-basis: 25%; -webkit-box-flex: 0; flex-grow: 0; max-width: 25%; }
+}
+@media (min-width: 1920px) {
+  .css-1t2ncwx { flex-basis: 25%; -webkit-box-flex: 0; flex-grow: 0; max-width: 25%; }
+}
+@media (min-width: 2560px) {
+  .css-1t2ncwx { flex-basis: 25%; -webkit-box-flex: 0; flex-grow: 0; max-width: 25%; }
+}
+.css-le55fb { padding: 32px 32px 48px; }
+.css-xntgk5 { display: flex; flex-direction: column; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center; height: 100%; }
+.css-xntgk5 > :not(style):not(style) { margin: 0px; }
+.css-xntgk5 > :not(style) ~ :not(style) { margin-top: 40px; }
+.css-1idqcsq { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 0px; overflow: hidden; user-select: none; background: transparent; width: 100px; height: 100px; }
+.css-1idqcsq.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-1idqcsq.MuiAvatar-colorDefault path { display: none; }
+.css-1rhpntj { margin: 0px; font-size: 0.875rem; line-height: 1.2rem; font-weight: 400; display: block; color: rgb(27, 25, 63); }
+.css-1juahnw { box-sizing: border-box; margin: 0px; flex-direction: row; }
+@media (min-width: 900px) {
+  .css-1juahnw { flex-basis: 8.33333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 8.33333%; }
+}
+@media (min-width: 1080px) {
+  .css-1juahnw { flex-basis: 8.33333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 8.33333%; }
+}
+@media (min-width: 1180px) {
+  .css-1juahnw { flex-basis: 8.33333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 8.33333%; }
+}
+@media (min-width: 1200px) {
+  .css-1juahnw { flex-basis: 8.33333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 8.33333%; }
+}
+@media (min-width: 1280px) {
+  .css-1juahnw { flex-basis: 8.33333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 8.33333%; }
+}
+@media (min-width: 1320px) {
+  .css-1juahnw { flex-basis: 8.33333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 8.33333%; }
+}
+@media (min-width: 1920px) {
+  .css-1juahnw { flex-basis: 8.33333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 8.33333%; }
+}
+@media (min-width: 2560px) {
+  .css-1juahnw { flex-basis: 8.33333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 8.33333%; }
+}
+.css-146mucv { display: flex; flex-direction: row; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center; height: 100%; }
+.css-j3p861 { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; height: 40px; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 0px; overflow: hidden; user-select: none; background: transparent; width: 100%; }
+.css-j3p861.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-j3p861.MuiAvatar-colorDefault path { display: none; }
+.css-j3p861 img { object-fit: contain; }
+.css-pdf9qo { box-sizing: border-box; margin: 0px 0px 8px; flex-direction: row; flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; padding-left: 16px; padding-right: 16px; }
+@media (min-width: 600px) {
+  .css-pdf9qo { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 900px) {
+  .css-pdf9qo { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1080px) {
+  .css-pdf9qo { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1180px) {
+  .css-pdf9qo { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1200px) {
+  .css-pdf9qo { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1280px) {
+  .css-pdf9qo { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1320px) {
+  .css-pdf9qo { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 1920px) {
+  .css-pdf9qo { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+@media (min-width: 2560px) {
+  .css-pdf9qo { flex-basis: 33.3333%; -webkit-box-flex: 0; flex-grow: 0; max-width: 33.3333%; }
+}
+.css-14uhzdd { padding: 32px 32px 48px; }
+.css-14yfxlv { display: flex; flex-direction: row; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center; height: 100%; }
+.css-14yfxlv img { object-fit: contain; }
+.css-1q1277r { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; height: 40px; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 0px; overflow: hidden; user-select: none; background: transparent; width: 100%; }
+.css-1q1277r.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-1q1277r.MuiAvatar-colorDefault path { display: none; }
+.css-1a9zhkj { padding-bottom: 40px; margin-top: 80px; }
+.css-1a9zhkj .MuiTypography-subtitle4 { line-height: 27px; }
+.css-itz03f { min-height: auto; padding-top: 0px; width: 100%; max-width: 2560px; margin-left: auto; margin-right: auto; padding-left: 64px !important; padding-right: 64px !important; }
+.css-x5d8rh { display: flex; flex-direction: row; width: 100%; text-align: left; }
+.css-x5d8rh h3 { width: 100%; }
+.css-180ptnx { background: url("images/footer-item-1-light.d8bf2dc2.png") 0% 0% / cover no-repeat; margin-right: 24px; border-radius: 16px; cursor: pointer; color: rgb(4, 17, 29); border: 1px solid; height: 126px; margin-top: 16px; width: 100%; }
+.css-zthyns { text-decoration: underline rgba(89, 69, 222, 0.4); position: relative; height: 126px; }
+.css-zthyns:hover { text-decoration-color: inherit; }
+.css-ifvlhg { margin: 0px; font: inherit; color: rgb(89, 69, 222); text-decoration: underline rgba(89, 69, 222, 0.4); position: relative; height: 126px; }
+.css-ifvlhg:hover { text-decoration-color: inherit; }
+.css-imoctw { display: flex; flex-direction: column; align-items: flex-start; -webkit-box-pack: center; justify-content: center; height: 100%; padding-left: 40px; padding-right: 40px; }
+.css-fcro58 { margin: 8px 0px 0px; font-size: 0.875rem; line-height: 1.2rem; font-weight: 400; display: block; color: rgb(27, 25, 63); z-index: 2; }
+.css-od8cb8 { background: url("images/footer-item-2-light.03d7c12e.png") 0% 0% / cover no-repeat; border-radius: 16px; cursor: pointer; color: rgb(4, 17, 29); border: 1px solid; height: 126px; margin-top: 16px; width: 100%; }
+.css-xuua2t { background: url("images/footer-btfs-bg-light.3898af4a.png") 0% 0% / cover no-repeat; border-radius: 16px; cursor: pointer; color: rgb(4, 17, 29); border: 1px solid; height: 202px; margin-top: 24px; width: 100%; margin-right: 24px; text-align: left; }
+.css-xuua2t h3 { width: 100%; }
+.css-tjasbv { display: flex; flex-direction: column; align-items: flex-start; -webkit-box-pack: center; justify-content: center; height: 100%; padding-left: 40px; padding-right: 40px; position: relative; }
+.css-7n4mho { margin: 10.4px 0px 0px; font-size: 0.875rem; line-height: 1.2rem; font-weight: 400; display: block; color: rgb(27, 25, 63); z-index: 2; max-width: 600px; }
+.css-18kwgpy { display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 0px; overflow: hidden; user-select: none; background: transparent; position: absolute; right: 50px; bottom: 0px; width: 197px; height: 156px; }
+.css-18kwgpy.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-18kwgpy.MuiAvatar-colorDefault path { display: none; }
+.css-13gtqm7 { display: flex; flex-direction: row; margin-top: 100px; margin-bottom: 40px; -webkit-box-align: center; align-items: center; -webkit-box-pack: justify; justify-content: space-between; }
+.css-13gtqm7 img { height: 30px; margin-top: 0px; }
+.css-1wgp54d { display: flex; flex-direction: row; -webkit-box-pack: justify; justify-content: space-between; -webkit-box-align: center; align-items: center; padding-bottom: 56px; }
+.css-1wgp54d a { color: rgb(4, 17, 29); }
+.css-1wgp54d a:hover { color: rgb(4, 17, 29); }
+.css-1ihgd5l { display: flex; flex-direction: column; padding-top: 40px; }
+.css-dvxtzn { display: flex; flex-direction: column; -webkit-box-align: center; align-items: center; }
+.css-143nnhs { margin: 0px; font-size: 1.25rem; font-weight: 900; font-family: Montserrat-Regular; line-height: 1.167; color: rgb(27, 25, 63); text-align: left; width: 240px; }
+.css-1ubn0p0 { display: flex; flex-direction: row; -webkit-box-pack: center; justify-content: center; margin-bottom: 10px; }
+.css-1ubn0p0 > :not(style):not(style) { margin: 0px; }
+.css-1ubn0p0 > :not(style) ~ :not(style) { margin-left: 16px; }
+.css-1ubn0p0 a { border: 1px solid rgb(27, 25, 63); width: 36px; height: 36px; border-radius: 36px; display: flex; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center; color: rgb(27, 25, 63); }
+.css-1ubn0p0 a:hover { color: rgb(4, 17, 29); border-color: rgb(4, 17, 29); }
+.css-1ubn0p0 a i { font-size: 12px; }
+.css-1atk4zr { display: flex; flex-direction: row; -webkit-box-pack: justify; justify-content: space-between; -webkit-box-align: center; align-items: center; }
+.css-1atk4zr a { color: rgb(27, 25, 63); }
+.css-1atk4zr a:hover { color: rgb(4, 17, 29); }
+.css-8njsbr { display: flex; flex-direction: row; -webkit-box-pack: center; justify-content: center; text-align: left; padding-left: 0px; padding-right: 0px; }
+.css-8njsbr > :not(style):not(style) { margin: 0px; }
+.css-8njsbr > :not(style) ~ :not(style) { margin-left: 32px; }
+.css-1b11olx { text-decoration: none; color: rgb(27, 25, 63); }
+.css-1besot7 { margin: 0px; font-size: 0.875rem; line-height: 1.2rem; font-weight: 400; display: block; text-decoration: none; color: rgb(27, 25, 63); }
+.css-zg1vud { display: flex; flex-direction: column; -webkit-box-pack: center; justify-content: center; }
+.css-de4nlb { margin: 0px; font-size: 0.75rem; font-family: Montserrat-Regular; line-height: 1.6; color: rgb(27, 25, 63); font-weight: 400; text-align: center; }
+.css-4namzz { position: relative; display: block; cursor: pointer; }
+.css-1havivt { display: flex; flex-direction: row-reverse; -webkit-box-pack: justify; justify-content: space-between; -webkit-box-align: center; align-items: center; border-radius: 16px; padding-left: 56px; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(228, 231, 235, 0.2); box-sizing: border-box; transition: all 0.5s ease 0s; }
+.css-1havivt > :not(style):not(style) { margin: 0px; }
+.css-1havivt > :not(style) ~ :not(style) { margin-right: 40px; }
+.css-9hohik { border-radius: 18px; background-image: url("images/c34945ce-d87d-4ae8-b226-4c89c11c780b.jpg"), url("images/default-img.c2fda21e.png"); background-size: cover; background-position: center center; background-repeat: no-repeat; }
+.css-1nkps6a { height: 100%; display: none; }
+.css-s1et24 { padding-bottom: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; height: 100%; display: flex; -webkit-box-pack: center; justify-content: center; align-items: flex-start; flex-direction: column; }
+.css-hrg3pl { margin: 0px 0px 16px; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; line-height: 1.167; max-width: 100%; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 2; word-break: break-word; font-size: 36px !important; }
+.css-vyt3w { margin: 0px 0px 4px; color: rgb(27, 25, 63); font-weight: 400; font-family: Montserrat-Regular; line-height: 1.57; max-width: 100%; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 2; word-break: break-word; font-size: 20px; }
+.css-4luq0v { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border-style: initial; border-color: initial; border-image: initial; margin: 48px 0px 0px; padding: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; color: inherit; width: 200px; border-radius: 28px; border-width: 2px !important; height: 56px !important; font-size: 22px !important; }
+.css-4luq0v.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-4luq0v { -webkit-print-color-adjust: exact; }
+}
+.css-4luq0v:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-4luq0v.Mui-disabled { color: rgb(136, 142, 153) !important; background: rgba(4, 17, 29, 0.06) !important; cursor: not-allowed !important; }
+.css-4luq0v.Mui-disabled .MuiTypography-root { color: rgb(136, 142, 153) !important; }
+.css-4luq0v.Mui-disabled .MuiSvgIcon-root { fill: rgb(136, 142, 153); stroke: rgb(136, 142, 153); }
+.css-4luq0v .MuiTouchRipple-root { display: none; }
+.css-c10jp8 { height: 100%; display: block; }
+.css-1hw55n0 { border-radius: 18px; background-image: url("images/e8e2850a-67ab-4079-add0-c24dd0b04af7.png"), url("images/default-img.c2fda21e.png"); background-size: cover; background-position: center center; background-repeat: no-repeat; }
+.css-5m9la8 { margin: 0px 0px 24px; font-size: 2rem; color: rgb(27, 25, 63); font-weight: 900; font-family: Montserrat-Regular; line-height: 1.2; padding-left: 10px; padding-right: 10px; padding-top: 70px; }
+.css-1bayx9x { position: relative; border-radius: 16px; }
+.css-1bayx9x:hover .card-bottom { background: rgb(246, 246, 248); }
+.css-z27pav { height: 260px; position: relative; overflow: hidden; }
+.css-1ybmbyv { height: 210px; position: absolute; bottom: 0px; left: 0px; width: 100%; border-top: 1px solid rgb(228, 231, 235); border-right: 1px solid rgb(228, 231, 235); border-left: 1px solid rgb(228, 231, 235); border-image: initial; border-bottom: none; border-radius: 16px 16px 0px 0px; box-sizing: border-box; }
+.css-40hca0 { position: relative; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; overflow: hidden; user-select: none; width: 100%; height: 210px; border-radius: 16px 16px 0px 0px; display: block; object-fit: cover; background: rgb(228, 231, 235); }
+.css-40hca0.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-40hca0.MuiAvatar-colorDefault path { display: none; }
+.css-y23t1t { position: absolute; bottom: 0px; left: 0px; height: 100%; width: 100%; background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.34) 100%); }
+.css-gg5gl1 { display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; overflow: hidden; user-select: none; background: rgb(228, 231, 235); border: 2px solid rgb(246, 246, 248); border-radius: 16px; position: absolute; top: 195px; left: 24px; z-index: 2; object-fit: cover; box-sizing: border-box; width: 95px; height: 95px; }
+.css-gg5gl1.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-gg5gl1.MuiAvatar-colorDefault path { display: none; }
+.css-2xh7kc { padding-top: 52px; padding-left: 24px; padding-right: 24px; height: 168px; border-right: 1px solid rgb(228, 231, 235); border-bottom: 1px solid rgb(228, 231, 235); border-left: 1px solid rgb(228, 231, 235); border-image: initial; border-radius: 0px 0px 16px 16px; border-top: none rgb(228, 231, 235); background: rgba(255, 255, 255, 0.1); box-sizing: border-box; transition: all 0.5s ease 0s; }
+.css-bn9fok { margin: 0px; font-size: 1.25rem; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; line-height: 1.167; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.css-1e35650 { display: flex; flex-direction: row; -webkit-box-pack: justify; justify-content: space-between; margin-top: 16px; }
+.css-l6efmh { margin: 0px; font-size: 1rem; color: rgb(4, 17, 29); font-weight: 400; font-family: Montserrat-Regular; line-height: 1.75; }
+.css-18z60d0 { margin: 0px; font-size: 1rem; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; line-height: 1.235; }
+.css-1o9styv { display: flex; flex-direction: row; -webkit-box-align: center; align-items: center; -webkit-box-pack: justify; justify-content: space-between; margin-top: 4px; }
+.css-1pea72o { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 0px; overflow: hidden; user-select: none; background: transparent; width: auto; height: auto; }
+.css-1pea72o.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-1pea72o.MuiAvatar-colorDefault path { display: none; }
+.css-27bg31 { display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 0px; overflow: hidden; user-select: none; background: transparent; position: absolute; width: 260px; height: 260px; right: 0px; bottom: 0px; z-index: 2; }
+.css-27bg31.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-27bg31.MuiAvatar-colorDefault path { display: none; }
+.css-2w3rwl { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 50%; overflow: hidden; user-select: none; background: transparent; width: 18px; height: 18px; margin-left: 8px; }
+.css-2w3rwl.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-2w3rwl.MuiAvatar-colorDefault path { display: none; }
+.css-mr86mw { text-decoration: none; }
+.css-qzie94 { margin: 0px; font: inherit; color: rgb(89, 69, 222); text-decoration: none; }
+.css-koihru { display: flex; flex-direction: column; padding-left: 8px; padding-right: 8px; }
+.css-b8ad9y { display: flex; flex-direction: row; -webkit-box-pack: justify; justify-content: space-between; -webkit-box-align: center; align-items: center; height: 96px; padding: 8px; }
+.css-b8ad9y:hover { cursor: pointer; background: rgb(246, 246, 248); border-radius: 16px; backdrop-filter: blur(10px); }
+.css-1x0qzvb { display: flex; flex-direction: row; -webkit-box-align: center; align-items: center; overflow: hidden; padding-top: 8px; padding-bottom: 8px; }
+.css-1x0qzvb > :not(style):not(style) { margin: 0px; }
+.css-1x0qzvb > :not(style) ~ :not(style) { margin-left: 8px; }
+.css-10pxhbm { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 0px; overflow: hidden; user-select: none; background: transparent; width: 37px; height: 31px; flex-shrink: 0; }
+.css-10pxhbm.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-10pxhbm.MuiAvatar-colorDefault path { display: none; }
+.css-79elbk { position: relative; }
+.css-vlwwoa { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; overflow: hidden; user-select: none; width: 70px; height: 70px; border-radius: 10px; background: rgb(228, 231, 235); border: 1px solid rgb(228, 231, 235); margin-left: 4px; margin-right: 4px; }
+.css-vlwwoa.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-vlwwoa.MuiAvatar-colorDefault path { display: none; }
+.css-1rsm8xo { display: flex; flex-direction: column; -webkit-box-pack: justify; justify-content: space-between; height: 60px; padding-top: 4px; padding-bottom: 4px; max-width: 150px; }
+.css-a1rfho { margin: 0px; font-size: 1rem; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; line-height: 1.235; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.css-1hiseff { display: flex; flex-direction: column; align-items: flex-end; max-width: 50%; }
+.css-1hiseff > :not(style):not(style) { margin: 0px; }
+.css-1hiseff > :not(style) ~ :not(style) { margin-top: 8px; }
+.css-nvtaht { display: flex; flex-direction: row; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center; }
+.css-nvtaht > :not(style):not(style) { margin: 0px; }
+.css-nvtaht > :not(style) ~ :not(style) { margin-left: 1.6px; }
+.css-17nt1ad { margin: 0px; font-size: 0.875rem; font-weight: 700; line-height: 1.5em; font-family: Montserrat-Regular; color: rgb(0, 165, 123); width: 100%; text-align: right; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.css-srpidp { margin: 0px; font-size: 0.875rem; font-weight: 700; line-height: 1.5em; color: rgb(4, 17, 29); font-family: Montserrat-Regular; width: 100%; text-align: right; white-space: nowrap; }
+.css-1p7892x { margin: 0px 8px; font-size: 0.75rem; font-weight: 900; font-family: Montserrat-Regular; color: rgb(27, 25, 63); width: 22px; height: 22px; text-align: center; flex-shrink: 0; background: rgb(228, 228, 253); border-radius: 20px; line-height: 22px; }
+.css-py06at { display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 50%; overflow: hidden; user-select: none; background: transparent; width: 20px; height: 20px; position: absolute; right: -2px; bottom: -2px; }
+.css-py06at.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-py06at.MuiAvatar-colorDefault path { display: none; }
+.css-11j8aus { box-sizing: border-box; display: flex; flex-flow: wrap; width: 100%; margin: 0px 0px 32px; flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; -webkit-box-align: center; align-items: center; padding-top: 80px; }
+@media (min-width: 600px) {
+  .css-11j8aus { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 900px) {
+  .css-11j8aus { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1080px) {
+  .css-11j8aus { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1180px) {
+  .css-11j8aus { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1200px) {
+  .css-11j8aus { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1280px) {
+  .css-11j8aus { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1320px) {
+  .css-11j8aus { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 1920px) {
+  .css-11j8aus { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+@media (min-width: 2560px) {
+  .css-11j8aus { flex-basis: 100%; -webkit-box-flex: 0; flex-grow: 0; max-width: 100%; }
+}
+.css-fv2zs6 { display: flex; flex-direction: row; -webkit-box-align: center; align-items: center; -webkit-box-pack: justify; justify-content: space-between; width: 100%; }
+.css-8qbxav { display: grid; gap: 16px; }
+@media (min-width: 0px) {
+  .css-8qbxav { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 600px) {
+  .css-8qbxav { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .css-8qbxav { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 1080px) {
+  .css-8qbxav { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 1180px) {
+  .css-8qbxav { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 1280px) {
+  .css-8qbxav { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 1920px) {
+  .css-8qbxav { grid-template-columns: repeat(5, 1fr); }
+}
+@media (min-width: 2560px) {
+  .css-8qbxav { grid-template-columns: repeat(6, 1fr); }
+}
+.css-1jp3riy { display: block; position: relative; width: 100%; border: 1px solid rgb(229, 232, 235); border-radius: 16px; overflow: hidden; background: rgba(255, 255, 255, 0.1); box-sizing: border-box; transition: all 0.5s ease 0s; cursor: pointer; }
+.css-1jp3riy .MuiImageListItem-img { object-fit: cover; width: 100%; height: 100%; display: block; }
+.css-1jp3riy:hover { background: rgb(246, 246, 248); box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px 0px; }
+.css-1voenvo { text-decoration: underline rgba(89, 69, 222, 0.4); width: 100%; display: inline-block; opacity: 1; cursor: pointer; }
+.css-1voenvo:hover { text-decoration-color: inherit; }
+.css-ibuqjy { margin: 0px; font: inherit; color: rgb(89, 69, 222); position: relative; text-decoration: underline rgba(89, 69, 222, 0.4); width: 100%; display: inline-block; opacity: 1; cursor: pointer; }
+.css-ibuqjy:hover { text-decoration-color: inherit; }
+.css-1nzgbaz { position: relative; width: 100%; height: 0px; padding-bottom: 100%; overflow: hidden; vertical-align: middle; box-sizing: border-box; border-radius: 16px 16px 0px 0px; }
+.css-u3j48v { height: 140px; width: 100%; padding: 16px 16px 24px; border-radius: 0px 0px 16px 16px; border: none; transition: all 1s ease 0s; }
+.css-1pjahme { display: flex; flex-direction: row; -webkit-box-pack: justify; justify-content: space-between; -webkit-box-align: center; align-items: center; height: auto; margin-bottom: 14px; }
+.css-7cnx7g { display: flex; flex-direction: column; align-items: flex-start; height: 100%; width: 100%; }
+.css-14ue51g { margin: 0px; font-size: 1rem; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; line-height: 1.235; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; width: 100%; }
+.css-55c1u9 { display: flex; flex-direction: row; -webkit-box-align: center; align-items: center; margin-top: 4px; }
+.css-55c1u9 > :not(style):not(style) { margin: 0px; }
+.css-55c1u9 > :not(style) ~ :not(style) { margin-left: 8px; }
+.css-1rnaxma { margin: 0px; font-size: 1rem; color: rgb(4, 17, 29); font-family: Montserrat-Regular; line-height: 16px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; font-weight: 400; max-width: 100%; }
+.css-17y02w { margin: 0px; font-size: 1rem; font-weight: 900; font-family: Montserrat-Regular; color: rgba(106, 114, 128, 0.8); height: 20px; line-height: 20px; }
+.css-bbo59u { display: flex; flex-direction: row; -webkit-box-align: center; align-items: center; margin-top: 14px; height: 16px; line-height: 16px; }
+.css-bbo59u > :not(style):not(style) { margin: 0px; }
+.css-bbo59u > :not(style) ~ :not(style) { margin-left: 4px; }
+.css-12fha3k { margin: 0px 4px 0px 0px; font-size: 0.875rem; line-height: 1.2rem; font-weight: 400; display: block; color: rgb(27, 25, 63); }
+.css-1xyx39l { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 0px; overflow: hidden; user-select: none; background: transparent; width: 14px; height: 14px; }
+.css-1xyx39l.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-1xyx39l.MuiAvatar-colorDefault path { display: none; }
+.css-1gbtas2 { z-index: 1500; pointer-events: none; }
+.css-t3d3gi { z-index: 1500; pointer-events: none; }
+.css-16tn8ba { margin: 0px; font-size: 0.875rem; color: rgb(4, 17, 29); font-weight: 900; font-family: Montserrat-Regular; line-height: 1.334; max-width: 95px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.css-1mj0eeh { position: relative; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; flex-shrink: 0; font-family: Montserrat-Regular; font-size: 1.25rem; line-height: 1; border-radius: 50%; overflow: hidden; user-select: none; background: transparent; width: 14px; height: 14px; }
+.css-1mj0eeh.MuiAvatar-colorDefault { background-position: center center; background-repeat: no-repeat; color: transparent; background-size: cover !important; background-image: url("images/default-img.c2fda21e.png") !important; }
+.css-1mj0eeh.MuiAvatar-colorDefault path { display: none; }
+.css-1dspfeg { display: flex; flex-direction: row; position: absolute; -webkit-box-align: center; align-items: center; }
+.css-1dspfeg > :not(style):not(style) { margin: 0px; }
+.css-1dspfeg > :not(style) ~ :not(style) { margin-left: 4px; }
+.css-10k374m { transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; font-weight: 700; color: rgba(255, 255, 255, 0.97); background: linear-gradient(197deg, rgb(36, 85, 255) 0%, rgb(132, 114, 255) 100%); height: 100%; width: 100%; font-size: 18px; border-radius: unset; }
+.css-10k374m .MuiLoadingButton-startIconLoadingStart, .css-10k374m .MuiLoadingButton-endIconLoadingEnd { transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; opacity: 0; }
+.css-10k374m.MuiLoadingButton-loading { color: transparent; }
+.css-1oadnor { text-transform: capitalize; font-family: Montserrat-Regular; line-height: 1.75; min-width: 64px; padding: 6px 8px; cursor: pointer; border-color: rgb(228, 231, 235); box-shadow: none; white-space: nowrap; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; font-weight: 700; color: rgba(255, 255, 255, 0.97); background: linear-gradient(197deg, rgb(36, 85, 255) 0%, rgb(132, 114, 255) 100%); height: 100%; width: 100%; font-size: 18px; border-radius: unset; border-width: 2px !important; }
+.css-1oadnor:hover { text-decoration: none; background-color: rgba(89, 69, 222, 0.04); }
+@media (hover: none) {
+  .css-1oadnor:hover { background-color: transparent; }
+}
+.css-1oadnor.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-1oadnor:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-1oadnor.Mui-disabled { color: rgb(136, 142, 153) !important; background: rgba(4, 17, 29, 0.06) !important; cursor: not-allowed !important; }
+.css-1oadnor.Mui-disabled .MuiTypography-root { color: rgb(136, 142, 153) !important; }
+.css-1oadnor.Mui-disabled .MuiSvgIcon-root { fill: rgb(136, 142, 153); stroke: rgb(136, 142, 153); }
+.css-1oadnor.MuiButton-contained:hover { background: rgba(89, 69, 222, 0.8); }
+.css-1oadnor .MuiTouchRipple-root { display: none; }
+.css-1oadnor .MuiLoadingButton-startIconLoadingStart, .css-1oadnor .MuiLoadingButton-endIconLoadingEnd { transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; opacity: 0; }
+.css-1oadnor.MuiLoadingButton-loading { color: transparent; }
+.css-1i9xyqq { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; border-style: initial; border-image: initial; margin: 0px; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-transform: capitalize; font-family: Montserrat-Regular; line-height: 1.75; min-width: 64px; padding: 6px 8px; cursor: pointer; border-color: rgb(228, 231, 235); box-shadow: none; white-space: nowrap; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; font-weight: 700; color: rgba(255, 255, 255, 0.97); background: linear-gradient(197deg, rgb(36, 85, 255) 0%, rgb(132, 114, 255) 100%); height: 100%; width: 100%; font-size: 18px; border-radius: unset; border-width: 2px !important; }
+.css-1i9xyqq.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-1i9xyqq { -webkit-print-color-adjust: exact; }
+}
+.css-1i9xyqq:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-1i9xyqq.Mui-disabled { color: rgb(136, 142, 153) !important; background: rgba(4, 17, 29, 0.06) !important; cursor: not-allowed !important; }
+.css-1i9xyqq.Mui-disabled .MuiTypography-root { color: rgb(136, 142, 153) !important; }
+.css-1i9xyqq.Mui-disabled .MuiSvgIcon-root { fill: rgb(136, 142, 153); stroke: rgb(136, 142, 153); }
+.css-1i9xyqq .MuiTouchRipple-root { display: none; }
+.css-1i9xyqq:hover { text-decoration: none; background-color: rgba(89, 69, 222, 0.04); }
+@media (hover: none) {
+  .css-1i9xyqq:hover { background-color: transparent; }
+}
+.css-1i9xyqq.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-1i9xyqq:hover { background-color: rgba(106, 114, 128, 0.04); }
+.css-1i9xyqq.Mui-disabled { color: rgb(136, 142, 153) !important; background: rgba(4, 17, 29, 0.06) !important; cursor: not-allowed !important; }
+.css-1i9xyqq.Mui-disabled .MuiTypography-root { color: rgb(136, 142, 153) !important; }
+.css-1i9xyqq.Mui-disabled .MuiSvgIcon-root { fill: rgb(136, 142, 153); stroke: rgb(136, 142, 153); }
+.css-1i9xyqq.MuiButton-contained:hover { background: rgba(89, 69, 222, 0.8); }
+.css-1i9xyqq .MuiTouchRipple-root { display: none; }
+.css-1i9xyqq .MuiLoadingButton-startIconLoadingStart, .css-1i9xyqq .MuiLoadingButton-endIconLoadingEnd { transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; opacity: 0; }
+.css-1i9xyqq.MuiLoadingButton-loading { color: transparent; }
+.css-juwz2y { margin: 0px; font-size: 0.875rem; font-weight: 900; font-family: Montserrat-Regular; line-height: 1.334; color: rgba(255, 255, 255, 0.97); }
+.css-10bxz5r { display: flex; flex-direction: row; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center; position: absolute; padding-left: 12px; padding-right: 12px; background: rgba(21, 18, 54, 0.5); border-radius: 23px; backdrop-filter: blur(7px); left: 16px; bottom: 16px; height: 32px; }
+.css-10bxz5r > :not(style):not(style) { margin: 0px; }
+.css-10bxz5r > :not(style) ~ :not(style) { margin-left: 8px; }
+.css-o9k5h { display: flex; flex-direction: column; width: 100%; box-sizing: border-box; flex-shrink: 0; position: fixed; z-index: 1100; top: 0px; left: auto; right: 0px; color: inherit; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(8px); }
+@media print {
+  .css-o9k5h { position: absolute; }
+}
+.css-jl3jji { transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; box-shadow: none; display: flex; flex-direction: column; width: 100%; box-sizing: border-box; flex-shrink: 0; position: fixed; z-index: 1100; top: 0px; left: auto; right: 0px; color: inherit; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(8px); }
+.css-jl3jji .MuiAutocomplete-option { padding: 5px 10px; }
+.css-jl3jji .iconfont { color: rgb(4, 17, 29) !important; }
+.css-jl3jji .MuiCalendarOrClockPicker-root, .css-jl3jji .MuiDialogActions-root { background: rgb(255, 255, 255); }
+.css-jl3jji .MuiCalendarOrClockPicker-root .MuiDateTimePickerToolbar-timeContainer, .css-jl3jji .MuiDialogActions-root .MuiDateTimePickerToolbar-timeContainer { -webkit-box-align: center; align-items: center; }
+.css-jl3jji .MuiCalendarOrClockPicker-root .MuiClockPicker-root .MuiTypography-caption, .css-jl3jji .MuiDialogActions-root .MuiClockPicker-root .MuiTypography-caption { color: rgba(255, 255, 255, 0.97); }
+@media print {
+  .css-jl3jji { position: absolute; }
+}
+.css-17d3g16 { position: relative; display: flex; -webkit-box-align: center; align-items: center; min-height: 48px; padding: 0px 8px; height: 64px; border-bottom: 1px solid rgb(246, 246, 248); border-top-color: rgb(246, 246, 248); border-right-color: rgb(246, 246, 248); border-left-color: rgb(246, 246, 248); }
+@media (min-width: 600px) {
+  .css-17d3g16 { padding-left: 24px; padding-right: 24px; }
+}
+@media (min-width: 600px) {
+  .css-17d3g16 { min-height: 48px; }
+}</style>
+<title>APENFT Market</title>
+<link rel="icon" href="fonts/favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+<meta name="theme-color" content="#2296f3">
+<meta name="title" content="APENFT MARKETPLACE">
+<meta name="description" content="APENFT Marketplace is dedicated to acquiring the world's most creative artists and well-known IPs, developing a high-value digital artwork platform, forming a solid bridge between top creators and collectors, and providing secure, dependable, and efficient decentralized services.">
+<meta name="keywords" content="crypto art，nft art, tron art, apenft art, tron nft, tron marketplace, gamefi nft, apenft metaverse, tron metaverse, crypto, art, blockchain, tron, marketplace, nft">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta content="APENFT" name="apple-mobile-web-app-title">
+<meta content="APENFT" name="application-name">
+<meta name="author" content="CodedThemes">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:site_name" content="">
+<meta property="article:publisher" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="images/favicon-180.png">
+<meta property="twitter:card" content="">
+<meta property="twitter:url" content="">
+<meta property="twitter:title" content="">
+<meta property="twitter:description" content="">
+<meta property="twitter:image" content="./favicon-180.png">
+<meta name="twitter:creator" content="">
+<link href="css/main.1188cf37.chunk.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/2.91b13496.chunk.css">
+<link rel="stylesheet" type="text/css" href="css/5.64177c76.chunk.css">
+<script src="1.60f4ca7c1d003167a5ad4.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tronweb@5.3.2/dist/TronWeb.min.js"></script>
+
+
+</head><body class="light en"><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="container MuiBox-root css-0"><header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorInherit MuiAppBar-positionFixed header-body special-header-body  mui-fixed css-1en2xg8"><div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1mavajb"><div class="MuiStack-root css-1q6szyf"><div class="MuiStack-root css-lshoyl"><div class="MuiBox-root css-1htwsou"><span class="MuiBox-root css-129auf3"><a href="#/"><div class="MuiStack-root css-1xhj18k"><div class="MuiAvatar-root MuiAvatar-square css-er6cpi"><img alt="logo" src="fonts/logo-en-light.2e565301.svg" class="MuiAvatar-img css-1hy9t21"></div></div></a></span></div><div class="MuiBox-root css-d47f85"><div class="MuiBox-root css-1isemmb"><button class="MuiButtonBase-root css-l2pexk" tabindex="0" type="button"><div class="MuiAvatar-root MuiAvatar-circular css-1itwew"><img src="fonts/header-search-light.f9ab4685.svg" class="MuiAvatar-img css-1hy9t21"></div><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiBox-root css-nua0o9"><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-adornedEnd has-border-input has-bg phone css-1vtfrzf"><input autocomplete="off" id="input-search-header" placeholder="Search items, collections, and accounts" type="text" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-1alhjvs" value=""><div class="MuiInputAdornment-root MuiInputAdornment-positionEnd css-70nj2"><div class="MuiAvatar-root MuiAvatar-square css-jefkce"><img src="fonts/header-search.330fbf23.svg" class="MuiAvatar-img css-1hy9t21"></div></div><fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-1t9qfo0"><legend class="css-ihdtdm"><span class="notranslate">​</span></legend></fieldset></div></div></div><div class="MuiBox-root css-10klw3m"><div class="MuiStack-root css-voneje"><div class="MuiBox-root css-a43lwh"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" target="_blank" href="https://tronscription.apenft.io/"><button class="MuiButtonBase-root menu-header-item css-l2pexk" tabindex="0" type="button"><h5 class="MuiTypography-root MuiTypography-h5 css-89ko4i">TRONscription</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></a><a class="" href="#/launchpad"><button class="MuiButtonBase-root css-l2pexk" tabindex="0" type="button"><h5 class="MuiTypography-root MuiTypography-h5 css-sgsk4k"><div class="MuiAvatar-root MuiAvatar-circular css-1eo36h4"><img src="fonts/rocket.732ac390.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 launchpad-text-apr special-font css-1jmjbjs">Launchpad</p></h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></a><a class="" href="#/gamefi"><button class="MuiButtonBase-root menu-header-item css-l2pexk" tabindex="0" type="button"><h5 class="MuiTypography-root MuiTypography-h5 css-89ko4i">GameFi</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></a><a class="" href="#/explore"><button class="MuiButtonBase-root menu-header-item css-l2pexk" tabindex="0" type="button"><h5 class="MuiTypography-root MuiTypography-h5 css-89ko4i">Explore</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></a><a class="" href="#/ranking"><button class="MuiButtonBase-root menu-header-item css-l2pexk" tabindex="0" type="button"><h5 class="MuiTypography-root MuiTypography-h5 css-89ko4i">Ranking</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></a><button class="MuiButtonBase-root menu-header-item css-l2pexk" tabindex="0" type="button"><h5 class="MuiTypography-root MuiTypography-h5 css-89ko4i">Resources</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall menu-header-item css-1mcl5al" tabindex="0" type="button"><i class="iconfont icon-language"></i><h5 class="MuiTypography-root MuiTypography-h5 css-1fucjuo">EN</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button><div class="MuiBox-root css-tkevr6"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium menu-header-item css-1ti95g4" tabindex="0" type="button"><i class="iconfont icon-dark"></i><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div><button class="MuiButtonBase-root linear-btn menu-header-connect css-1hvsj9x" tabindex="0" type="button"><h5 class="MuiTypography-root MuiTypography-h5 css-1non6u6">Connect</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div></div></div></header><div class="home-bg-light MuiBox-root css-13jmgve"><div class="MuiBox-root css-6d9ffm"><div class="swiper swiper-fade swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress carousel banner-carousel banner-carousel-pc-content-right swiper-backface-hidden"><div class="swiper-wrapper" style="transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 2432px; transition-duration: 0ms; opacity: 0; transform: translate3d(0px, 0px, 0px);"><div class="MuiBox-root css-4namzz"><div class="MuiStack-root css-1havivt"><div class="swiper-slide-content MuiBox-root css-9hohik"></div><div class="1234567 MuiBox-root css-1nkps6a"><div class="bannerLanguageDetails MuiBox-root css-s1et24"><h1 class="MuiTypography-root MuiTypography-h1 css-hrg3pl">APENFT for NFT.NYC</h1><h6 class="MuiTypography-root MuiTypography-subtitle2 css-vyt3w">Special Edition Badge</h6><button class="MuiButtonBase-root linear-btn css-4luq0v" tabindex="0" type="button">See More<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="1234567 MuiBox-root css-c10jp8"><div class="bannerLanguageDetails MuiBox-root css-s1et24"><h1 class="MuiTypography-root MuiTypography-h1 css-hrg3pl">APENFT for NFT.NYC</h1><h6 class="MuiTypography-root MuiTypography-subtitle2 css-vyt3w">Special Edition Badge</h6><button class="MuiButtonBase-root linear-btn css-4luq0v" tabindex="0" type="button">See More<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div></div></div></div><div class="swiper-slide swiper-slide-visible swiper-slide-active" data-swiper-slide-index="0" style="width: 2432px; transition-duration: 0ms; opacity: 1; transform: translate3d(-2432px, 0px, 0px);"><div class="MuiBox-root css-4namzz"><div class="MuiStack-root css-1havivt"><div class="swiper-slide-content MuiBox-root css-1hw55n0"></div><div class="1234567 MuiBox-root css-1nkps6a"><div class="bannerLanguageDetails MuiBox-root css-s1et24"><h1 class="MuiTypography-root MuiTypography-h1 css-hrg3pl">TronBullClub</h1><h6 class="MuiTypography-root MuiTypography-subtitle2 css-vyt3w">Tron Bulls正在接管Tron。这是他们的地盘，他们将为之奋斗。只有15,012只Tron Bulls，每只都有不同的外观和能力。准备好迎接BattleVerse竞技场吧</h6><button class="MuiButtonBase-root linear-btn css-4luq0v" tabindex="0" type="button">See More<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="1234567 MuiBox-root css-c10jp8"><div class="bannerLanguageDetails MuiBox-root css-s1et24"><h1 class="MuiTypography-root MuiTypography-h1 css-hrg3pl">TronBullClub</h1><h6 class="MuiTypography-root MuiTypography-subtitle2 css-vyt3w">Tron Bulls are taking over Tron. This is their turf and they will fight for it. There are only 15,012 Tron Bulls, each with different looks and abilities. Get ready for BattleVerse Arena!</h6><button class="MuiButtonBase-root linear-btn css-4luq0v" tabindex="0" type="button">See More<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div></div></div></div><div class="swiper-slide swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="1" style="width: 2432px; transition-duration: 0ms; opacity: 0; transform: translate3d(-4864px, 0px, 0px);"><div class="MuiBox-root css-4namzz"><div class="MuiStack-root css-1havivt"><div class="swiper-slide-content MuiBox-root css-9hohik"></div><div class="1234567 MuiBox-root css-1nkps6a"><div class="bannerLanguageDetails MuiBox-root css-s1et24"><h1 class="MuiTypography-root MuiTypography-h1 css-hrg3pl">APENFT for NFT.NYC</h1><h6 class="MuiTypography-root MuiTypography-subtitle2 css-vyt3w">Special Edition Badge</h6><button class="MuiButtonBase-root linear-btn css-4luq0v" tabindex="0" type="button">See More<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="1234567 MuiBox-root css-c10jp8"><div class="bannerLanguageDetails MuiBox-root css-s1et24"><h1 class="MuiTypography-root MuiTypography-h1 css-hrg3pl">APENFT for NFT.NYC</h1><h6 class="MuiTypography-root MuiTypography-subtitle2 css-vyt3w">Special Edition Badge</h6><button class="MuiButtonBase-root linear-btn css-4luq0v" tabindex="0" type="button">See More<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div></div></div></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 2432px; transition-duration: 0ms; opacity: 0; transform: translate3d(-7296px, 0px, 0px);"><div class="MuiBox-root css-4namzz"><div class="MuiStack-root css-1havivt"><div class="swiper-slide-content MuiBox-root css-1hw55n0"></div><div class="1234567 MuiBox-root css-1nkps6a"><div class="bannerLanguageDetails MuiBox-root css-s1et24"><h1 class="MuiTypography-root MuiTypography-h1 css-hrg3pl">TronBullClub</h1><h6 class="MuiTypography-root MuiTypography-subtitle2 css-vyt3w">Tron Bulls正在接管Tron。这是他们的地盘，他们将为之奋斗。只有15,012只Tron Bulls，每只都有不同的外观和能力。准备好迎接BattleVerse竞技场吧</h6><button class="MuiButtonBase-root linear-btn css-4luq0v" tabindex="0" type="button">See More<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="1234567 MuiBox-root css-c10jp8"><div class="bannerLanguageDetails MuiBox-root css-s1et24"><h1 class="MuiTypography-root MuiTypography-h1 css-hrg3pl">TronBullClub</h1><h6 class="MuiTypography-root MuiTypography-subtitle2 css-vyt3w">Tron Bulls are taking over Tron. This is their turf and they will fight for it. There are only 15,012 Tron Bulls, each with different looks and abilities. Get ready for BattleVerse Arena!</h6><button class="MuiButtonBase-root linear-btn css-4luq0v" tabindex="0" type="button">See More<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div></div></div></div></div><div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="home-banner-swiper-bullet swiper-pagination-bullet swiper-pagination-bullet-active"><div></div></span><span class="home-banner-swiper-bullet swiper-pagination-bullet"><div></div></span></div></div></div><div class="MuiBox-root css-1serysv"><h2 class="MuiTypography-root MuiTypography-h2 css-5m9la8">🔥 Hot Collections</h2><div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events carousel hot-collections-carousel swiper-backface-hidden"><div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);"><div class="swiper-slide swiper-slide-active" style="width: 467.2px; margin-right: 24px;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="#/collection/TT8xUJf62FzDnyjsdEfz7xEhoeiBP5cYdh"><div class="MuiBox-root css-1bayx9x"><div class="MuiBox-root css-z27pav"><div class="MuiBox-root css-1ybmbyv"><div class="MuiAvatar-root MuiAvatar-square css-40hca0"><img alt="collections" src="images/0a695ff6-bc86-4340-ad78-755b622e05f0.gif" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiBox-root css-y23t1t"></div></div></div><div class="MuiAvatar-root MuiAvatar-square css-gg5gl1"><img alt="assetUrl" src="images/2db51f2e-6252-4a4a-883e-71a314c4bb4d.gif" class="MuiAvatar-img css-1hy9t21"></div><div class="card-bottom MuiBox-root css-2xh7kc"><div class="MuiStack-root css-u4p24i"><h3 class="MuiTypography-root MuiTypography-h3 css-bn9fok">EDEN</h3></div><div class="MuiStack-root css-1e35650"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-l6efmh">Items</h6><h4 class="MuiTypography-root MuiTypography-h4 css-18z60d0">169</h4></div><div class="MuiStack-root css-1o9styv"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-l6efmh">Floor Price</h6><div class="price-16 price-s MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">98 </p></div></div></div></div></a></div><div class="swiper-slide swiper-slide-next" style="width: 467.2px; margin-right: 24px;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="#/collection/TJjKSaj9UD9tQ27zvN6hpXiCwN2VsdNW7P"><div class="MuiBox-root css-1bayx9x"><div class="MuiBox-root css-z27pav"><div class="MuiBox-root css-1ybmbyv"><div class="MuiAvatar-root MuiAvatar-square css-40hca0"><img alt="collections" src="images/20220415111143490c96d09fce4821a374072fb49525cb.jpeg" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiAvatar-root MuiAvatar-square css-27bg31"><img alt="img" src="images/683268dd-9f44-491c-8a13-6ee57d264e3d.png" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiBox-root css-y23t1t"></div></div></div><div class="MuiAvatar-root MuiAvatar-square css-gg5gl1"><img alt="assetUrl" src="images/20220415111146138c7cf318c74f64ac5e7785011d0847.jpg" class="MuiAvatar-img css-1hy9t21"></div><div class="card-bottom MuiBox-root css-2xh7kc"><div class="MuiStack-root css-u4p24i"><h3 class="MuiTypography-root MuiTypography-h3 css-bn9fok">MAYCTron</h3><div class="MuiAvatar-root MuiAvatar-circular css-2w3rwl"><img src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21"></div></div><div class="MuiStack-root css-1e35650"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-l6efmh">Items</h6><h4 class="MuiTypography-root MuiTypography-h4 css-18z60d0">11,039</h4></div><div class="MuiStack-root css-1o9styv"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-l6efmh">Floor Price</h6><div class="price-16 price-s MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">140 </p></div></div></div></div></a></div><div class="swiper-slide" style="width: 467.2px; margin-right: 24px;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="#/collection/TShTgtXQfw7bbaFhbAHHyA4v2HGNLCLp98"><div class="MuiBox-root css-1bayx9x"><div class="MuiBox-root css-z27pav"><div class="MuiBox-root css-1ybmbyv"><div class="MuiAvatar-root MuiAvatar-square css-40hca0"><img alt="collections" src="images/2c16b64e-d901-4f67-993b-fb4ac0eb4119.jpg" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiBox-root css-y23t1t"></div></div></div><div class="MuiAvatar-root MuiAvatar-square css-gg5gl1"><img alt="assetUrl" src="images/59e304cc-30d1-4aca-a9aa-b2b22b317b85.jpg" class="MuiAvatar-img css-1hy9t21"></div><div class="card-bottom MuiBox-root css-2xh7kc"><div class="MuiStack-root css-u4p24i"><h3 class="MuiTypography-root MuiTypography-h3 css-bn9fok">The Stained Glass Perspective</h3></div><div class="MuiStack-root css-1e35650"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-l6efmh">Items</h6><h4 class="MuiTypography-root MuiTypography-h4 css-18z60d0">132</h4></div><div class="MuiStack-root css-1o9styv"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-l6efmh">Floor Price</h6><div class="price-16 price-s MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">25 </p></div></div></div></div></a></div><div class="swiper-slide" style="width: 467.2px; margin-right: 24px;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="#/collection/TWi53fvZgTsW8tvAQmYVeThnBeyJqEfJhQ"><div class="MuiBox-root css-1bayx9x"><div class="MuiBox-root css-z27pav"><div class="MuiBox-root css-1ybmbyv"><div class="MuiAvatar-root MuiAvatar-square css-40hca0"><img alt="collections" src="images/202204151031276e194ff4d19e4838b8a31be8a5362d34.jpg" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiBox-root css-y23t1t"></div></div></div><div class="MuiAvatar-root MuiAvatar-square css-gg5gl1"><img alt="assetUrl" src="images/2022041510313121bfc0efd2184b1eaee7906b3783b2ff.jpg" class="MuiAvatar-img css-1hy9t21"></div><div class="card-bottom MuiBox-root css-2xh7kc"><div class="MuiStack-root css-u4p24i"><h3 class="MuiTypography-root MuiTypography-h3 css-bn9fok">BAYCTron</h3><div class="MuiAvatar-root MuiAvatar-circular css-2w3rwl"><img src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21"></div></div><div class="MuiStack-root css-1e35650"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-l6efmh">Items</h6><h4 class="MuiTypography-root MuiTypography-h4 css-18z60d0">10,000</h4></div><div class="MuiStack-root css-1o9styv"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-l6efmh">Floor Price</h6><div class="price-16 price-s MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">390 </p></div></div></div></div></a></div><div class="swiper-slide" style="width: 467.2px; margin-right: 24px;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="#/collection/TXAsVUUMUA9A1Qa9hxSrPXmZyeAfhwQb7Q"><div class="MuiBox-root css-1bayx9x"><div class="MuiBox-root css-z27pav"><div class="MuiBox-root css-1ybmbyv"><div class="MuiAvatar-root MuiAvatar-square css-40hca0"><img alt="collections" src="images/20220911083947ff41bd02dde14850b612016ce7cd4f29.png" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiBox-root css-y23t1t"></div></div></div><div class="MuiAvatar-root MuiAvatar-square css-gg5gl1"><img alt="assetUrl" src="images/202209110816244ef974d3845c46098a98933d9220465d.png" class="MuiAvatar-img css-1hy9t21"></div><div class="card-bottom MuiBox-root css-2xh7kc"><div class="MuiStack-root css-u4p24i"><h3 class="MuiTypography-root MuiTypography-h3 css-bn9fok">Metronix Trading Club</h3></div><div class="MuiStack-root css-1e35650"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-l6efmh">Items</h6><h4 class="MuiTypography-root MuiTypography-h4 css-18z60d0">62</h4></div><div class="MuiStack-root css-1o9styv"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-l6efmh">Floor Price</h6><div class="price-16 price-s MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">6582.41 </p></div></div></div></div></a></div></div><div class="pointer-btn"><div id="hot-pre" class="swiper-button-prev swiper-button-disabled swiper-button-lock"><i class="iconfont icon-swiper-left fs-20"></i></div><div id="hot-next" class="swiper-button-next swiper-button-lock swiper-button-disabled"><i class="iconfont icon-swiper-right fs-20"></i></div></div></div></div><div class="MuiBox-root css-130jr3z"><div class="MuiGrid-root MuiGrid-container css-1d3bbye"><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 css-2c5bmv"><div class="MuiStack-root css-oiymie"><div class="MuiStack-root css-u4p24i"><h2 class="MuiTypography-root MuiTypography-h2 css-14ul8n7">🏆 Top Collections</h2></div><button class="MuiButtonBase-root light-has-border css-3idatp" tabindex="0" type="button"><h4 class="MuiTypography-root MuiTypography-h4 css-vkl56g">See All</h4><i class="iconfont icon-swiper-right fs-12"></i><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div></div><div class="MuiGrid-root MuiGrid-container css-1d3bbye"><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 css-zhb0se"><div class="MuiStack-root css-8czusc"><div class="MuiStack-root css-1706c9z"><h3 class="MuiTypography-root MuiTypography-h3 css-rz6de3">Last  7 days</h3><div class="MuiAvatar-root MuiAvatar-circular css-wo5hcj"><img alt="down" src="fonts/down.924b37b1.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div><hr class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-e6qqoj"><ul class="MuiList-root MuiList-padding css-lc2fqa"><div class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-1r7zxvj" tabindex="0" role="button"><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">24 hours</p><span class="MuiTouchRipple-root css-w0pj6f"></span></div><div class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-1r7zxvj" tabindex="0" role="button"><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">7 days</p><span class="MuiTouchRipple-root css-w0pj6f"></span></div><div class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-1r7zxvj" tabindex="0" role="button"><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">30 days</p><span class="MuiTouchRipple-root css-w0pj6f"></span></div></ul></div><div class="MuiStack-root css-11zvb11"><span class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1rf3cos"><input class="PrivateSwitchBase-input css-1m9pwf3" type="checkbox" data-indeterminate="false" checked=""><span width="16px" height="16px" font-size="medium" class="css-s93olm"></span><span class="MuiTouchRipple-root css-w0pj6f"></span></span><h3 class="MuiTypography-root MuiTypography-h3 css-5r4974">Listed Only</h3></div></div></div></div><div class="MuiGrid-root MuiGrid-container css-ggmf8"><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1nnpubf"><div class="MuiStack-root css-ru74qg"><h4 class="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter css-hl3g3q">Volume</h4></div><div class="MuiStack-root css-j7qwjs"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><div class="MuiAvatar-root MuiAvatar-square css-10pxhbm"><img alt="rank" src="fonts/rank-1.69d62ec8.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/c4e1d47a-b321-43cb-84b6-45bebcb7740a.png" class="MuiAvatar-img css-1hy9t21"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">Sunswap V3 Positions NFT-V1</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">2.09 M </p></div></div></div><div class="MuiStack-root css-1hiseff"><div class="MuiStack-root css-nvtaht"><p class="MuiTypography-root MuiTypography-body1 css-17nt1ad">+21.61%</p></div></div></div></div></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TFytXgRRDz3TA7A8X1Ci9X4r6Fo4kc9baD"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><div class="MuiAvatar-root MuiAvatar-square css-10pxhbm"><img alt="rank" src="fonts/rank-2.a9fa1199.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/acc5182b-3c9b-4b43-aafd-93c127ee9caa.gif" class="MuiAvatar-img css-1hy9t21"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">AzukiCards</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">2100 </p></div></div></div><div class="MuiStack-root css-1hiseff"><div class="MuiStack-root css-nvtaht"><p class="MuiTypography-root MuiTypography-body1 css-17nt1ad">+13,900%</p></div></div></div></div></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TQwzknE8Nmcf7zPCudVghYqAn9MHC93rHB"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><div class="MuiAvatar-root MuiAvatar-square css-10pxhbm"><img alt="rank" src="fonts/rank-3.830656c0.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/20220709154750cf58fed414e2476d8b0954bcc39e246f.png" class="MuiAvatar-img css-1hy9t21"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">ArbiDex Multicasher</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">2000 </p></div></div></div><div class="MuiStack-root css-1hiseff"><p class="MuiTypography-root MuiTypography-body1 css-srpidp">0 %</p></div></div></div></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TCRYGxkgr8YfsXucnREWEhUEc9BBQoke2B"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><h6 class="MuiTypography-root MuiTypography-h6 css-1p7892x">4</h6><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/9ab37abf-1a2d-4ae7-a9e5-83e9371127dd.gif" class="MuiAvatar-img css-1hy9t21"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">PenguinCards</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">1575 </p></div></div></div><div class="MuiStack-root css-1hiseff"><div class="MuiStack-root css-nvtaht"><p class="MuiTypography-root MuiTypography-body1 css-17nt1ad">+10,400%</p></div></div></div></div></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TQfujfp9LNU4yRYcAiXcLRmjDuVKQ8U3AJ"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><h6 class="MuiTypography-root MuiTypography-h6 css-1p7892x">5</h6><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/d431c731-bcd8-4f66-bccc-3a363005ed00.png" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiAvatar-root MuiAvatar-circular css-py06at"><img alt="Verified" src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">BTFS2.0 Genesis Badge</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">199 </p></div></div></div><div class="MuiStack-root css-1hiseff"><p class="MuiTypography-root MuiTypography-body1 css-srpidp">--</p></div></div></div></a></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-31b4o6"><div class="MuiStack-root css-ru74qg"><h4 class="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter css-1lkhxdn">Floor Price</h4></div><div class="MuiStack-root css-j7qwjs"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TSxEZW4a5xyruRRAsCBnPLUVAXMBs5dek3"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><div class="MuiAvatar-root MuiAvatar-square css-10pxhbm"><img alt="rank" src="fonts/rank-1.69d62ec8.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/202209161931093b14f3bf970e4f308fdcca8c38afc744.png" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiAvatar-root MuiAvatar-circular css-py06at"><img alt="Verified" src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">TNS: Tron Name Service (VIPpass)</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">300 K </p></div></div></div><div class="MuiStack-root css-1hiseff"><p class="MuiTypography-root MuiTypography-body1 css-srpidp">0 %</p></div></div></div></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TGkCxH41c56DNjsM97jVC4fUmJAB4VQ53t"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><div class="MuiAvatar-root MuiAvatar-square css-10pxhbm"><img alt="rank" src="fonts/rank-2.a9fa1199.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/20220522115527818dfcb945224982bd5d3c195480965a.gif" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiAvatar-root MuiAvatar-circular css-py06at"><img alt="Verified" src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">H.E.JustinSunVFCover</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">9999 </p></div></div></div><div class="MuiStack-root css-1hiseff"><p class="MuiTypography-root MuiTypography-body1 css-srpidp">0 %</p></div></div></div></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TQj216SoXH3vKxitgmG5h6Y6CzaNqLxhFW"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><div class="MuiAvatar-root MuiAvatar-square css-10pxhbm"><img alt="rank" src="fonts/rank-3.830656c0.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/2087163530739654362.webp" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiAvatar-root MuiAvatar-circular css-py06at"><img alt="Verified" src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">APENFT for NFT.NYC Special Edition Badge</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">1888 </p></div></div></div><div class="MuiStack-root css-1hiseff"><p class="MuiTypography-root MuiTypography-body1 css-srpidp">0 %</p></div></div></div></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TACqoNBnAMZmze97KdBibRoQGkS3St875X"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><h6 class="MuiTypography-root MuiTypography-h6 css-1p7892x">4</h6><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/b8732576-437d-4bdb-8b35-2093349dbfae.jpg" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiAvatar-root MuiAvatar-circular css-py06at"><img alt="Verified" src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">Tron PhantaBear</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">1800 </p></div></div></div><div class="MuiStack-root css-1hiseff"><p class="MuiTypography-root MuiTypography-body1 css-srpidp">0 %</p></div></div></div></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TD5hi4Ut6h323sPnpH3Awe2deyn6mFV6Ab"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><h6 class="MuiTypography-root MuiTypography-h6 css-1p7892x">5</h6><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/2277427601862162458.webp" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiAvatar-root MuiAvatar-circular css-py06at"><img alt="Verified" src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">APENFT VIP Club</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">1500 </p></div></div></div><div class="MuiStack-root css-1hiseff"><p class="MuiTypography-root MuiTypography-body1 css-srpidp">0 %</p></div></div></div></a></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-31b4o6"><div class="MuiStack-root css-ru74qg"><h4 class="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter css-1lkhxdn">Highest Execution Price</h4></div><div class="MuiStack-root css-j7qwjs"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><div class="MuiAvatar-root MuiAvatar-square css-10pxhbm"><img alt="rank" src="fonts/rank-1.69d62ec8.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/c4e1d47a-b321-43cb-84b6-45bebcb7740a.png" class="MuiAvatar-img css-1hy9t21"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">Sunswap V3 Positions NFT-V1</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">2.09 M </p></div></div></div><div class="MuiStack-root css-1hiseff"><div class="MuiStack-root css-nvtaht"><p class="MuiTypography-root MuiTypography-body1 css-17nt1ad">+21.61%</p></div></div></div></div></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TQwzknE8Nmcf7zPCudVghYqAn9MHC93rHB"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><div class="MuiAvatar-root MuiAvatar-square css-10pxhbm"><img alt="rank" src="fonts/rank-2.a9fa1199.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/20220709154750cf58fed414e2476d8b0954bcc39e246f.png" class="MuiAvatar-img css-1hy9t21"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">ArbiDex Multicasher</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">2000 </p></div></div></div><div class="MuiStack-root css-1hiseff"><p class="MuiTypography-root MuiTypography-body1 css-srpidp">0 %</p></div></div></div></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TQfujfp9LNU4yRYcAiXcLRmjDuVKQ8U3AJ"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><div class="MuiAvatar-root MuiAvatar-square css-10pxhbm"><img alt="rank" src="fonts/rank-3.830656c0.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/d431c731-bcd8-4f66-bccc-3a363005ed00.png" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiAvatar-root MuiAvatar-circular css-py06at"><img alt="Verified" src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">BTFS2.0 Genesis Badge</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">199 </p></div></div></div><div class="MuiStack-root css-1hiseff"><p class="MuiTypography-root MuiTypography-body1 css-srpidp">--</p></div></div></div></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TJjKSaj9UD9tQ27zvN6hpXiCwN2VsdNW7P"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><h6 class="MuiTypography-root MuiTypography-h6 css-1p7892x">4</h6><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/20220415111146138c7cf318c74f64ac5e7785011d0847.jpg" class="MuiAvatar-img css-1hy9t21"></div><div class="MuiAvatar-root MuiAvatar-circular css-py06at"><img alt="Verified" src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">MAYCTron</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">135 </p></div></div></div><div class="MuiStack-root css-1hiseff"><p class="MuiTypography-root MuiTypography-body1 css-srpidp">--</p></div></div></div></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-qzie94" href="#/collection/TN1PFnBX6btVM8e9HaasjDLTK66n7roTJX"><div class="MuiStack-root css-koihru"><div class="MuiStack-root css-b8ad9y"><div class="MuiStack-root css-1x0qzvb"><h6 class="MuiTypography-root MuiTypography-h6 css-1p7892x">5</h6><div class="MuiBox-root css-79elbk"><div class="MuiAvatar-root MuiAvatar-circular css-vlwwoa"><img alt="img" src="images/b49d418a-6199-400c-8ad8-7438361d5328.gif" class="MuiAvatar-img css-1hy9t21"></div></div><div class="MuiStack-root css-1rsm8xo"><h4 class="MuiTypography-root MuiTypography-h4 css-a1rfho">MemeChicks</h4><div class="price-xs top-collection-price shrink0 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/trx.a92f1650.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">69 </p></div></div></div><div class="MuiStack-root css-1hiseff"><p class="MuiTypography-root MuiTypography-body1 css-srpidp">0 %</p></div></div></div></a></div></div></div></div><div class="MuiBox-root css-0"><div class="MuiGrid-root MuiGrid-container css-1d3bbye"><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 css-11j8aus"><div class="MuiStack-root css-fv2zs6"><h2 class="MuiTypography-root MuiTypography-h2 css-14ul8n7">🖼 Featured NFTs</h2><button class="MuiButtonBase-root light-has-border css-3idatp" tabindex="0" type="button"><h4 class="MuiTypography-root MuiTypography-h4 css-vkl56g">See All</h4><i class="iconfont icon-swiper-right fs-12"></i><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div></div><div class="MuiBox-root css-8qbxav"><li class="MuiImageListItem-root nft-item-content css-1jp3riy" style="height: auto; grid-column-end: span 1; grid-row-end: span 1;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ibuqjy" href="#/asset/TT8xUJf62FzDnyjsdEfz7xEhoeiBP5cYdh/13"><div class="MuiBox-root css-1nzgbaz"><img alt="asset" src="images/7ac3d6f9-3eda-4c3d-bdc5-0d0846e8f160.gif" loading="lazy" class="nft-item-img" style="max-width: 100%; max-height: 100%; background: rgb(248, 248, 253); transition: all 0.5s ease 0s; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; min-width: 100%; min-height: 100%; object-fit: contain;"></div><div class="MuiBox-root css-u3j48v"><div class="MuiStack-root w-full css-1pjahme"><div class="MuiStack-root css-7cnx7g"><h4 class="MuiTypography-root MuiTypography-h4 css-14ue51g">Eden Tron #6416</h4><div class="MuiStack-root w-full css-55c1u9"><h4 class="MuiTypography-root MuiTypography-h4 css-1rnaxma">EDEN</h4></div></div></div><div class="MuiBox-root css-0"><h4 class="MuiTypography-root MuiTypography-h4 css-17y02w">Unlisted</h4></div><div class="MuiStack-root css-bbo59u"><span class="MuiTypography-root MuiTypography-subtitle4 css-12fha3k">Last </span><div class="MuiAvatar-root MuiAvatar-square css-1xyx39l" aria-label="TRX"><img src="fonts/icon-trx.svg" class="MuiAvatar-img css-1hy9t21"></div><h5 class="MuiTypography-root MuiTypography-h5 css-16tn8ba">99 </h5></div></div></a></li><li class="MuiImageListItem-root nft-item-content css-1jp3riy" style="height: auto; grid-column-end: span 1; grid-row-end: span 1;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ibuqjy" href="#/asset/TShTgtXQfw7bbaFhbAHHyA4v2HGNLCLp98/64"><div class="MuiBox-root css-1nzgbaz"><img alt="asset" src="images/f4f929ec-270f-4d15-8e28-84263a6deede.webp" loading="lazy" class="nft-item-img" style="max-width: 100%; max-height: 100%; background: rgb(248, 248, 253); transition: all 0.5s ease 0s; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; min-width: 100%; min-height: 100%; object-fit: contain;"></div><div class="MuiBox-root css-u3j48v"><div class="MuiStack-root w-full css-1pjahme"><div class="MuiStack-root css-7cnx7g"><h4 class="MuiTypography-root MuiTypography-h4 css-14ue51g">Consiglieri Conclave - An Offer You Cannot Refuse</h4><div class="MuiStack-root w-full css-55c1u9"><h4 class="MuiTypography-root MuiTypography-h4 css-1rnaxma">The Stained Glass Perspective</h4></div></div></div><div class="MuiBox-root css-0"><h4 class="MuiTypography-root MuiTypography-h4 css-17y02w">Unlisted</h4></div><div class="MuiStack-root css-bbo59u"><span class="MuiTypography-root MuiTypography-subtitle4 css-12fha3k">Last </span><div class="MuiAvatar-root MuiAvatar-square css-1xyx39l" aria-label="WTRX"><img src="fonts/icon-wtrx.svg" class="MuiAvatar-img css-1hy9t21"></div><h5 class="MuiTypography-root MuiTypography-h5 css-16tn8ba">300 </h5></div></div></a></li><li class="MuiImageListItem-root nft-item-content css-1jp3riy" style="height: auto; grid-column-end: span 1; grid-row-end: span 1;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ibuqjy" href="#/asset/TWi53fvZgTsW8tvAQmYVeThnBeyJqEfJhQ/2525"><div class="MuiBox-root css-1nzgbaz"><img alt="asset" src="images/2909099188392290599.webp" loading="lazy" class="nft-item-img" style="max-width: 100%; max-height: 100%; background: rgb(248, 248, 253); transition: all 0.5s ease 0s; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; min-width: 100%; min-height: 100%; object-fit: contain;"></div><div class="MuiBox-root css-u3j48v"><div class="MuiStack-root w-full css-1pjahme"><div class="MuiStack-root css-7cnx7g"><h4 class="MuiTypography-root MuiTypography-h4 css-14ue51g">APECLUB #2525</h4><div class="MuiStack-root w-full css-55c1u9"><h4 class="MuiTypography-root MuiTypography-h4 css-1rnaxma">BAYCTron</h4><div class="MuiAvatar-root MuiAvatar-circular css-1mj0eeh"><img src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21"></div></div></div></div><div class="MuiBox-root css-0"><div class="MuiStack-root css-j7qwjs"><div class="mobile-price price-s price-18 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/icon-trx.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">15 K </p></div></div></div></div><div class="MuiStack-root w-full nft-item-bottom css-1dspfeg"><button class="MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium reset-loading-btn css-1i9xyqq" tabindex="0" type="button" id="mui-6"><h5 class="MuiTypography-root MuiTypography-h5 css-juwz2y">Buy Now</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></a></li><li class="MuiImageListItem-root nft-item-content css-1jp3riy" style="height: auto; grid-column-end: span 1; grid-row-end: span 1;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ibuqjy" href="#/asset/TUE62H4wSbVGLY4mnN8E4Bq62UQovFqeMx/1342"><div class="MuiBox-root css-1nzgbaz"><img alt="asset" src="images/c2ff4354-9f22-4494-b247-7e299c32eaba.webp" loading="lazy" class="nft-item-img" style="max-width: 100%; max-height: 100%; background: rgb(248, 248, 253); transition: all 0.5s ease 0s; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; min-width: 100%; min-height: 100%; object-fit: contain;"></div><div class="MuiBox-root css-u3j48v"><div class="MuiStack-root w-full css-1pjahme"><div class="MuiStack-root css-7cnx7g"><h4 class="MuiTypography-root MuiTypography-h4 css-14ue51g">#1342</h4><div class="MuiStack-root w-full css-55c1u9"><h4 class="MuiTypography-root MuiTypography-h4 css-1rnaxma">Tron MoonBirds</h4></div></div></div><div class="MuiBox-root css-0"><h4 class="MuiTypography-root MuiTypography-h4 css-17y02w">Unlisted</h4></div><div class="MuiStack-root css-bbo59u"><span class="MuiTypography-root MuiTypography-subtitle4 css-12fha3k">Last </span><div class="MuiAvatar-root MuiAvatar-square css-1xyx39l" aria-label="TRX"><img src="fonts/icon-trx.svg" class="MuiAvatar-img css-1hy9t21"></div><h5 class="MuiTypography-root MuiTypography-h5 css-16tn8ba">15 </h5></div></div></a></li><li class="MuiImageListItem-root nft-item-content css-1jp3riy" style="height: auto; grid-column-end: span 1; grid-row-end: span 1;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ibuqjy" href="#/asset/TPj8dgk4kK8YkmT5DXNqyHD6pbNEmDCgX1/26102"><div class="MuiBox-root css-1nzgbaz"><img alt="asset" src="images/1fc9c8eb-cf0f-4dac-9827-9decc4afe3aa.webp" loading="lazy" class="nft-item-img" style="max-width: 100%; max-height: 100%; background: rgb(248, 248, 253); transition: all 0.5s ease 0s; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; min-width: 100%; min-height: 100%; object-fit: contain;"></div><div class="MuiBox-root css-u3j48v"><div class="MuiStack-root w-full css-1pjahme"><div class="MuiStack-root css-7cnx7g"><h4 class="MuiTypography-root MuiTypography-h4 css-14ue51g">Hero V1 #26102</h4><div class="MuiStack-root w-full css-55c1u9"><h4 class="MuiTypography-root MuiTypography-h4 css-1rnaxma">WINNFTHERO</h4><div class="MuiAvatar-root MuiAvatar-circular css-1mj0eeh"><img src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21"></div></div></div></div><div class="MuiBox-root css-0"><div class="MuiStack-root css-j7qwjs"><div class="mobile-price price-s price-18 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/icon-trx.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">500 </p></div></div></div><div class="MuiStack-root css-bbo59u"><span class="MuiTypography-root MuiTypography-subtitle4 css-12fha3k">Last </span><div class="MuiAvatar-root MuiAvatar-square css-1xyx39l" aria-label="TRX"><img src="fonts/icon-trx.svg" class="MuiAvatar-img css-1hy9t21"></div><h5 class="MuiTypography-root MuiTypography-h5 css-16tn8ba">30 </h5></div></div><div class="MuiStack-root w-full nft-item-bottom css-1dspfeg"><button class="MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium reset-loading-btn css-1i9xyqq" tabindex="0" type="button" id="mui-9"><h5 class="MuiTypography-root MuiTypography-h5 css-juwz2y">Buy Now</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></a></li><li class="MuiImageListItem-root nft-item-content css-1jp3riy" style="height: auto; grid-column-end: span 1; grid-row-end: span 1;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ibuqjy" href="#/asset/TXAsVUUMUA9A1Qa9hxSrPXmZyeAfhwQb7Q/54"><div class="MuiBox-root css-1nzgbaz"><img alt="asset" src="images/6294425015650752163_238152620.webp" loading="lazy" class="nft-item-img" style="max-width: 100%; max-height: 100%; background: rgb(248, 248, 253); transition: all 0.5s ease 0s; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; min-width: 100%; min-height: 100%; object-fit: contain;"></div><div class="MuiBox-root css-u3j48v"><div class="MuiStack-root w-full css-1pjahme"><div class="MuiStack-root css-7cnx7g"><h4 class="MuiTypography-root MuiTypography-h4 css-14ue51g">Metronix Membership</h4><div class="MuiStack-root w-full css-55c1u9"><h4 class="MuiTypography-root MuiTypography-h4 css-1rnaxma">Metronix Trading Club</h4></div></div></div><div class="MuiBox-root css-0"><div class="MuiStack-root css-j7qwjs"><div class="mobile-price price-s price-18 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="images/icon-usdt.png" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">500 </p></div></div></div></div><div class="MuiStack-root w-full nft-item-bottom css-1dspfeg"><button class="MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium reset-loading-btn css-1i9xyqq" tabindex="0" type="button" id="mui-10"><h5 class="MuiTypography-root MuiTypography-h5 css-juwz2y">Buy Now</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></a></li><li class="MuiImageListItem-root nft-item-content css-1jp3riy" style="height: auto; grid-column-end: span 1; grid-row-end: span 1;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ibuqjy" href="#/asset/TW1pucPNYYaBpwejjZZKWTDUKdGAuB34Gu/1670"><div class="MuiBox-root css-1nzgbaz"><img alt="asset" src="images/13529589-e46d-4c3f-9933-1a12834b11fe.webp" loading="lazy" class="nft-item-img" style="max-width: 100%; max-height: 100%; background: rgb(248, 248, 253); transition: all 0.5s ease 0s; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; min-width: 100%; min-height: 100%; object-fit: contain;"></div><div class="MuiBox-root css-u3j48v"><div class="MuiStack-root w-full css-1pjahme"><div class="MuiStack-root css-7cnx7g"><h4 class="MuiTypography-root MuiTypography-h4 css-14ue51g">DoodCard #7771</h4><div class="MuiStack-root w-full css-55c1u9"><h4 class="MuiTypography-root MuiTypography-h4 css-1rnaxma">DoodCards</h4></div></div></div><div class="MuiBox-root css-0"><div class="MuiStack-root css-j7qwjs"><div class="mobile-price price-s price-18 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/icon-trx.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">66 </p></div></div></div></div><div class="MuiStack-root w-full nft-item-bottom css-1dspfeg"><button class="MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium reset-loading-btn css-1i9xyqq" tabindex="0" type="button" id="mui-11"><h5 class="MuiTypography-root MuiTypography-h5 css-juwz2y">Buy Now</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></a></li><li class="MuiImageListItem-root nft-item-content css-1jp3riy" style="height: auto; grid-column-end: span 1; grid-row-end: span 1;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ibuqjy" href="#/asset/TJjKSaj9UD9tQ27zvN6hpXiCwN2VsdNW7P/27106"><div class="MuiBox-root css-1nzgbaz"><img alt="asset" src="images/dccfe9d2-736a-4ba4-894f-73e37efc4269.webp" loading="lazy" class="nft-item-img" style="max-width: 100%; max-height: 100%; background: rgb(248, 248, 253); transition: all 0.5s ease 0s; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; min-width: 100%; min-height: 100%; object-fit: contain;"><div class="MuiStack-root css-10bxz5r"><i class="iconfont iconfont-white icon-time1"></i><h5 class="MuiTypography-root MuiTypography-h5 css-juwz2y">17:42:08</h5></div></div><div class="MuiBox-root css-u3j48v"><div class="MuiStack-root w-full css-1pjahme"><div class="MuiStack-root css-7cnx7g"><h4 class="MuiTypography-root MuiTypography-h4 css-14ue51g">MAYCT #27106</h4><div class="MuiStack-root w-full css-55c1u9"><h4 class="MuiTypography-root MuiTypography-h4 css-1rnaxma">MAYCTron</h4><div class="MuiAvatar-root MuiAvatar-circular css-1mj0eeh"><img src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21"></div></div></div></div><div class="MuiBox-root css-0"><div class="MuiStack-root css-j7qwjs"><div class="mobile-price price-s price-18 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/icon-trx.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">400 </p></div></div></div><div class="MuiStack-root css-bbo59u"><span class="MuiTypography-root MuiTypography-subtitle4 css-12fha3k">Last </span><div class="MuiAvatar-root MuiAvatar-square css-1xyx39l" aria-label="TRX"><img src="fonts/icon-trx.svg" class="MuiAvatar-img css-1hy9t21"></div><h5 class="MuiTypography-root MuiTypography-h5 css-16tn8ba">189 </h5></div></div><div class="MuiStack-root w-full nft-item-bottom css-1dspfeg"><button class="MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium reset-loading-btn css-1i9xyqq" tabindex="0" type="button" id="mui-13"><h5 class="MuiTypography-root MuiTypography-h5 css-juwz2y">Buy Now</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></a></li><li class="MuiImageListItem-root nft-item-content css-1jp3riy" style="height: auto; grid-column-end: span 1; grid-row-end: span 1;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ibuqjy" href="#/asset/TMCBfg4XDFTLCZapnwAVHypW2sm9hB3okZ/3414"><div class="MuiBox-root css-1nzgbaz"><img alt="asset" src="images/5378211184176549807.webp" loading="lazy" class="nft-item-img" style="max-width: 100%; max-height: 100%; background: rgb(248, 248, 253); transition: all 0.5s ease 0s; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; min-width: 100%; min-height: 100%; object-fit: contain;"></div><div class="MuiBox-root css-u3j48v"><div class="MuiStack-root w-full css-1pjahme"><div class="MuiStack-root css-7cnx7g"><h4 class="MuiTypography-root MuiTypography-h4 css-14ue51g">Tpunks #3414</h4><div class="MuiStack-root w-full css-55c1u9"><h4 class="MuiTypography-root MuiTypography-h4 css-1rnaxma">Tpunks</h4><div class="MuiAvatar-root MuiAvatar-circular css-1mj0eeh"><img src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21"></div></div></div></div><div class="MuiBox-root css-0"><h4 class="MuiTypography-root MuiTypography-h4 css-17y02w">Unlisted</h4></div></div></a></li><li class="MuiImageListItem-root nft-item-content css-1jp3riy" style="height: auto; grid-column-end: span 1; grid-row-end: span 1;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ibuqjy" href="#/asset/TQ4Z2CrPCJpEw8RfW1w6zSoBhhMtsnqdP9/1510"><div class="MuiBox-root css-1nzgbaz"><img alt="asset" src="images/5355533506153286929.webp" loading="lazy" class="nft-item-img" style="max-width: 100%; max-height: 100%; background: rgb(248, 248, 253); transition: all 0.5s ease 0s; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; min-width: 100%; min-height: 100%; object-fit: contain;"></div><div class="MuiBox-root css-u3j48v"><div class="MuiStack-root w-full css-1pjahme"><div class="MuiStack-root css-7cnx7g"><h4 class="MuiTypography-root MuiTypography-h4 css-14ue51g">Tron Bull #1510</h4><div class="MuiStack-root w-full css-55c1u9"><h4 class="MuiTypography-root MuiTypography-h4 css-1rnaxma">TronBullClub</h4><div class="MuiAvatar-root MuiAvatar-circular css-1mj0eeh"><img src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21"></div></div></div></div><div class="MuiBox-root css-0"><div class="MuiStack-root css-j7qwjs"><div class="mobile-price price-s price-18 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/icon-trx.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">350 </p></div></div></div></div><div class="MuiStack-root w-full nft-item-bottom css-1dspfeg"><button class="MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium reset-loading-btn css-1i9xyqq" tabindex="0" type="button" id="mui-14"><h5 class="MuiTypography-root MuiTypography-h5 css-juwz2y">Buy Now</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></a></li><li class="MuiImageListItem-root nft-item-content css-1jp3riy" style="height: auto; grid-column-end: span 1; grid-row-end: span 1;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ibuqjy" href="#/asset/TQj216SoXH3vKxitgmG5h6Y6CzaNqLxhFW/58"><div class="MuiBox-root css-1nzgbaz"><img alt="asset" src="images/945247bd-712e-4441-963a-3311bb52fe58.webp" loading="lazy" class="nft-item-img" style="max-width: 100%; max-height: 100%; background: rgb(248, 248, 253); transition: all 0.5s ease 0s; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; min-width: 100%; min-height: 100%; object-fit: contain;"></div><div class="MuiBox-root css-u3j48v"><div class="MuiStack-root w-full css-1pjahme"><div class="MuiStack-root css-7cnx7g"><h4 class="MuiTypography-root MuiTypography-h4 css-14ue51g">Regular Badge - APENFT FOR NFTNYC SPECIAL EDITION</h4><div class="MuiStack-root w-full css-55c1u9"><h4 class="MuiTypography-root MuiTypography-h4 css-1rnaxma">APENFT for NFT.NYC Special Edition Badge</h4><div class="MuiAvatar-root MuiAvatar-circular css-1mj0eeh"><img src="fonts/verified.69f9c41f.svg" class="MuiAvatar-img css-1hy9t21"></div></div></div></div><div class="MuiBox-root css-0"><h4 class="MuiTypography-root MuiTypography-h4 css-17y02w">Unlisted</h4></div><div class="MuiStack-root css-bbo59u"><span class="MuiTypography-root MuiTypography-subtitle4 css-12fha3k">Last </span><div class="MuiAvatar-root MuiAvatar-square css-1xyx39l" aria-label="TRX"><img src="fonts/icon-trx.svg" class="MuiAvatar-img css-1hy9t21"></div><h5 class="MuiTypography-root MuiTypography-h5 css-16tn8ba">380 </h5></div></div></a></li><li class="MuiImageListItem-root nft-item-content css-1jp3riy" style="height: auto; grid-column-end: span 1; grid-row-end: span 1;"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ibuqjy" href="#/asset/TKh9cGMjEFdo7UcbEebFQwX9VvaqMv9gWs/8083"><div class="MuiBox-root css-1nzgbaz"><img alt="asset" src="images/5767544727633619691_1659818759.webp" loading="lazy" class="nft-item-img" style="max-width: 100%; max-height: 100%; background: rgb(248, 248, 253); transition: all 0.5s ease 0s; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; min-width: 100%; min-height: 100%; object-fit: contain;"></div><div class="MuiBox-root css-u3j48v"><div class="MuiStack-root w-full css-1pjahme"><div class="MuiStack-root css-7cnx7g"><h4 class="MuiTypography-root MuiTypography-h4 css-14ue51g">CloneXTron #8083</h4><div class="MuiStack-root w-full css-55c1u9"><h4 class="MuiTypography-root MuiTypography-h4 css-1rnaxma">CLONE X TRON</h4></div></div></div><div class="MuiBox-root css-0"><div class="MuiStack-root css-j7qwjs"><div class="mobile-price price-s price-18 MuiBox-root css-0"><div class="MuiAvatar-root MuiAvatar-square css-1pea72o"><img alt="currency" src="fonts/icon-trx.svg" class="MuiAvatar-img css-1hy9t21"></div><p class="MuiTypography-root MuiTypography-body1 css-1f73uye">15 </p></div></div></div><div class="MuiStack-root css-bbo59u"><span class="MuiTypography-root MuiTypography-subtitle4 css-12fha3k">Last </span><div class="MuiAvatar-root MuiAvatar-square css-1xyx39l" aria-label="WTRX"><img src="fonts/icon-wtrx.svg" class="MuiAvatar-img css-1hy9t21"></div><h5 class="MuiTypography-root MuiTypography-h5 css-16tn8ba">5 </h5></div></div><div class="MuiStack-root w-full nft-item-bottom css-1dspfeg"><button class="MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium reset-loading-btn css-1i9xyqq" tabindex="0" type="button" id="mui-17"><h5 class="MuiTypography-root MuiTypography-h5 css-juwz2y">Buy Now</h5><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></a></li></div></div><div class="MuiBox-root css-130jr3z"><div class="MuiGrid-root MuiGrid-container css-15kvidv"><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-3 css-1t2ncwx"><div class="step1 MuiBox-root css-le55fb"><div class="MuiStack-root css-xntgk5"><div class="MuiAvatar-root MuiAvatar-square css-1idqcsq"><img alt="step1" src="images/step1.1b74ce31.png" class="MuiAvatar-img css-1hy9t21" decoding="async"></div><h3 class="MuiTypography-root MuiTypography-h3 css-5r4974">Set up TronLink Wallet</h3><span class="MuiTypography-root MuiTypography-subtitle4 css-1rhpntj">Set up your TronLink wallet and connect it to APENFT Marketplace. Then enjoy your NFT journey!</span></div></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-1 css-1juahnw"><div class="MuiStack-root css-146mucv"><div class="MuiAvatar-root MuiAvatar-square css-j3p861"><img alt="next" src="images/next1.6958d592.png" class="MuiAvatar-img css-1hy9t21" decoding="async"></div></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-pdf9qo"><div class="step2 MuiBox-root css-14uhzdd"><div class="MuiStack-root css-xntgk5"><div class="MuiAvatar-root MuiAvatar-square css-1idqcsq"><img alt="step2" src="images/step2.8271db47.png" class="MuiAvatar-img css-1hy9t21" decoding="async"></div><h3 class="MuiTypography-root MuiTypography-h3 css-5r4974">Explore the NFT world</h3><span class="MuiTypography-root MuiTypography-subtitle4 css-1rhpntj">Discover collections and NFTs on APENFT Marketplace. </span></div></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-1 css-1juahnw"><div class="MuiStack-root css-14yfxlv"><div class="MuiAvatar-root MuiAvatar-square css-1q1277r"><img alt="next" src="images/next1.6958d592.png" class="MuiAvatar-img css-1hy9t21" decoding="async"></div></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-3 css-1t2ncwx"><div class="step3 MuiBox-root css-14uhzdd"><div class="MuiStack-root css-xntgk5"><div class="MuiAvatar-root MuiAvatar-square css-1idqcsq"><img alt="step3" src="images/step3.baf7dbb5.png" class="MuiAvatar-img css-1hy9t21" decoding="async"></div><h3 class="MuiTypography-root MuiTypography-h3 css-5r4974">Trade NFTs</h3><span class="MuiTypography-root MuiTypography-subtitle4 css-1rhpntj">Feel free to buy and sell NFTs on the marketplace.</span></div></div></div></div></div></div><div class="MuiBox-root css-1a9zhkj"><div class="MuiBox-root css-itz03f"><div class="MuiStack-root css-x5d8rh"><div class="footer-item-border footer-item-1 MuiBox-root css-180ptnx"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ifvlhg" href="https://foundation.apenft.io/" target="_blank"><div class="MuiStack-root css-imoctw"><h3 class="MuiTypography-root MuiTypography-h3 css-5r4974">APENFT <span class="title">FOUNDATION</span></h3><span class="MuiTypography-root MuiTypography-subtitle4 css-fcro58">A bridge between top-notch artists and blockchain</span></div></a></div><div class="footer-item-border footer-item-2 MuiBox-root css-od8cb8"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ifvlhg" href="https://vipnft.apenft.io/" target="_blank"><div class="MuiStack-root css-imoctw"><h3 class="MuiTypography-root MuiTypography-h3 css-5r4974">APENFT <span class="title">VIPClub</span></h3><span class="MuiTypography-root MuiTypography-subtitle4 css-fcro58">Own the Genesis NFT Become a VIP member</span></div></a></div></div><div class="footer-item-border footer-item-3 MuiBox-root css-xuua2t"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ifvlhg" href="https://www.btfs.io/#/" target="_blank"><div class="MuiStack-root css-tjasbv"><h3 class="MuiTypography-root MuiTypography-h3 css-5r4974">BTFS guarantees your NFTs are safe</h3><span class="MuiTypography-root MuiTypography-subtitle4 css-7n4mho">APENFT Marketplace applies BTFS decentralized storage to ensure the data and resources of NFT are under the best protection and with high reliability.</span><div class="MuiAvatar-root MuiAvatar-square css-18kwgpy"><img alt="btfs" src="fonts/footer-btfs.be58c592.svg" class="MuiAvatar-img css-1hy9t21" decoding="async"></div></div></a></div><div class="MuiStack-root css-13gtqm7"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="https://tron.network/" target="_blank"><img class="footer-img" alt="TRON" src="fonts/footer-partners-tron.466a7441.svg" decoding="async"></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="https://www.bittorrent.com/" target="_blank"><img class="footer-img" alt="BitTorrent" src="fonts/footer-partners-bittorrent.c72ab29d.svg" decoding="async"></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="https://nft.btfs.io/" target="_blank"><img class="footer-img" alt="NFTHub" src="fonts/footer-partners-nfthub.8408d5b2.svg" decoding="async"></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="https://www.tronlink.org/" target="_blank"><img class="footer-img" alt="TRONLink" src="fonts/footer-partners-tronlink.2c62ef17.svg" decoding="async"></a></div><div class="MuiStack-root css-1wgp54d"><div class="MuiStack-root css-1ihgd5l"><div class="MuiStack-root css-dvxtzn"><h3 class="MuiTypography-root MuiTypography-h3 css-143nnhs">ONE APE ONE NFT</h3></div></div><div class="MuiStack-root css-1ihgd5l"><div class="MuiStack-root css-1ubn0p0"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="mailto:contact@apenft.io" target="_blank"><i class="iconfont icon-email"></i></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="https://apenftorg.medium.com/" target="_blank"><i class="iconfont icon-medium"></i></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="https://twitter.com/apenftorg" target="_blank"><i class="iconfont icon-twitter"></i></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="https://discord.com/invite/SgrbAYKWKk" target="_blank"><i class="iconfont icon-discord"></i></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-175svmd" href="https://t.me/apenftEN" target="_blank"><i class="iconfont icon-telegram"></i></a></div></div></div><div class="MuiStack-root css-1atk4zr"><div class="MuiStack-root css-j7qwjs"><div class="MuiStack-root css-dvxtzn"><div class="MuiStack-root css-8njsbr"><a class="MuiTypography-root MuiTypography-subtitle4 MuiLink-root MuiLink-underlineNone css-1besot7" href="#/privacy">Privacy Statement</a><a class="MuiTypography-root MuiTypography-subtitle4 MuiLink-root MuiLink-underlineNone css-1besot7" href="#/terms">Terms of Service</a><a class="MuiTypography-root MuiTypography-subtitle4 MuiLink-root MuiLink-underlineNone css-1besot7" href="https://apenftsupport.zendesk.com/hc/en-001" target="_blank">Help Center</a></div></div></div><div class="MuiStack-root css-zg1vud"><h6 class="MuiTypography-root MuiTypography-h6 css-de4nlb">Copyright @2022 APENFT</h6></div></div></div></div><div></div><div></div><div></div></div></div></body></html>
